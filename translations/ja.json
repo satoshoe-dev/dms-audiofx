@@ -290,13 +290,13 @@
     "Which spots glow": {
         "Which spots glow": "どの部分が光るか"
     },
-    "Only the most common color suits an image with a single glow color. Bright light also lights up white or pale sources such as a sun or a light shaft.": {
-        "Only the most common color suits an image with a single glow color. Bright light also lights up white or pale sources such as a sun or a light shaft.": "最も多い色は、光の色が一つの画像に向いています。明るい光では、太陽や光の筋のような白っぽい光源も光ります。"
-    },
     "Most common color": {
         "Most common color": "最も多い色"
     },
-    "Colors and bright light": {
-        "Colors and bright light": "色と明るい光"
+    "An image with a single glow color is served by its most common color. The third option only falls back to bright light, such as a sun or a light shaft, when an image has no colored spots at all.": {
+        "An image with a single glow color is served by its most common color. The third option only falls back to bright light, such as a sun or a light shaft, when an image has no colored spots at all.": "光の色が一つの画像には、最も多い色が向いています。三番目の選択は、色のある部分がまったくない画像のときだけ、太陽や光の筋などの明るい光に切り替えます。"
+    },
+    "Colors, or bright light if there are none": {
+        "Colors, or bright light if there are none": "色、なければ明るい光"
     }
 }

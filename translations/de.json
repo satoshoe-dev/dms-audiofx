@@ -290,13 +290,13 @@
     "Which spots glow": {
         "Which spots glow": "Welche Stellen leuchten"
     },
-    "Only the most common color suits an image with a single glow color. Bright light also lights up white or pale sources such as a sun or a light shaft.": {
-        "Only the most common color suits an image with a single glow color. Bright light also lights up white or pale sources such as a sun or a light shaft.": "Nur der häufigste Farbton passt zu einem Bild mit einer einzigen Leuchtfarbe. Mit hellem Licht leuchten auch weiße oder blasse Quellen wie eine Sonne oder ein Lichtschacht."
-    },
     "Most common color": {
         "Most common color": "Häufigster Farbton"
     },
-    "Colors and bright light": {
-        "Colors and bright light": "Farben und helles Licht"
+    "An image with a single glow color is served by its most common color. The third option only falls back to bright light, such as a sun or a light shaft, when an image has no colored spots at all.": {
+        "An image with a single glow color is served by its most common color. The third option only falls back to bright light, such as a sun or a light shaft, when an image has no colored spots at all.": "Zu einem Bild mit einer einzigen Leuchtfarbe passt der häufigste Farbton. Die dritte Option greift nur dann auf helles Licht zurück, etwa eine Sonne oder einen Lichtschacht, wenn ein Bild überhaupt keine farbigen Stellen hat."
+    },
+    "Colors, or bright light if there are none": {
+        "Colors, or bright light if there are none": "Farben, sonst helles Licht"
     }
 }

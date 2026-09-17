@@ -290,13 +290,13 @@
     "Which spots glow": {
         "Which spots glow": "Какие места светятся"
     },
-    "Only the most common color suits an image with a single glow color. Bright light also lights up white or pale sources such as a sun or a light shaft.": {
-        "Only the most common color suits an image with a single glow color. Bright light also lights up white or pale sources such as a sun or a light shaft.": "Самый частый цвет подходит для изображения с одним цветом свечения. Со светлым светом светятся и белые или бледные источники, например солнце или световой луч."
-    },
     "Most common color": {
         "Most common color": "Самый частый цвет"
     },
-    "Colors and bright light": {
-        "Colors and bright light": "Цвета и яркий свет"
+    "An image with a single glow color is served by its most common color. The third option only falls back to bright light, such as a sun or a light shaft, when an image has no colored spots at all.": {
+        "An image with a single glow color is served by its most common color. The third option only falls back to bright light, such as a sun or a light shaft, when an image has no colored spots at all.": "Для изображения с одним цветом свечения подходит самый частый цвет. Третий вариант переходит к яркому свету, например солнцу или световому лучу, только если в изображении нет цветных мест."
+    },
+    "Colors, or bright light if there are none": {
+        "Colors, or bright light if there are none": "Цвета, иначе яркий свет"
     }
 }

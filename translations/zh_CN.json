@@ -290,13 +290,13 @@
     "Which spots glow": {
         "Which spots glow": "哪些位置发光"
     },
-    "Only the most common color suits an image with a single glow color. Bright light also lights up white or pale sources such as a sun or a light shaft.": {
-        "Only the most common color suits an image with a single glow color. Bright light also lights up white or pale sources such as a sun or a light shaft.": "只取最常见的颜色适合只有一种发光色的图片。包含明亮光线时，太阳或光束这类白色或浅色光源也会发光。"
-    },
     "Most common color": {
         "Most common color": "最常见的颜色"
     },
-    "Colors and bright light": {
-        "Colors and bright light": "颜色和明亮光线"
+    "An image with a single glow color is served by its most common color. The third option only falls back to bright light, such as a sun or a light shaft, when an image has no colored spots at all.": {
+        "An image with a single glow color is served by its most common color. The third option only falls back to bright light, such as a sun or a light shaft, when an image has no colored spots at all.": "只有一种发光色的图片用最常见的颜色即可。第三个选项只在图片完全没有彩色发光点时，才退回到明亮光线，例如太阳或光束。"
+    },
+    "Colors, or bright light if there are none": {
+        "Colors, or bright light if there are none": "颜色，若没有则用明亮光线"
     }
 }

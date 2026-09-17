@@ -412,7 +412,7 @@ PluginSettings {
         visible: glowToggle.value
         settingKey: "glowColors"
         label: I18n.trFor("audioFx", "Which spots glow")
-        description: I18n.trFor("audioFx", "Only the most common color suits an image with a single glow color. Bright light also lights up white or pale sources such as a sun or a light shaft.")
+        description: I18n.trFor("audioFx", "An image with a single glow color is served by its most common color. The third option only falls back to bright light, such as a sun or a light shaft, when an image has no colored spots at all.")
         defaultValue: "hue"
         options: [
             {
@@ -424,7 +424,7 @@ PluginSettings {
                 value: "all"
             },
             {
-                label: I18n.trFor("audioFx", "Colors and bright light"),
+                label: I18n.trFor("audioFx", "Colors, or bright light if there are none"),
                 value: "light"
             }
         ]

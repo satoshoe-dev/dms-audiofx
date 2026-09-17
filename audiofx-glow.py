@@ -39,7 +39,7 @@ from pathlib import Path
 import numpy as np
 from PIL import Image, ImageFilter
 
-VERSION = 11  # bump on any change to the computation or output -> invalidates the cache
+VERSION = 12  # bump on any change to the computation or output -> invalidates the cache
 
 
 def log(*a):
@@ -166,7 +166,8 @@ def main():
     ap.add_argument("--cache", default=os.path.expanduser("~/.cache/DankMaterialShell/audiofx-glow"))
     ap.add_argument("--threshold", type=int, default=50, help="0 finds a lot, 100 only the strongest")
     # hue: the most common saturated hue, all: every saturated color,
-    # light: saturated colors plus bright light sources without color
+    # light: like hue, but bright light sources without color when the image
+    # has no colored spots worth mentioning
     ap.add_argument("--colors", choices=["hue", "all", "light"], default="hue")
     ap.add_argument("--force", action="store_true", help="recompute even if cached")
     a = ap.parse_args()
@@ -247,10 +248,14 @@ def main():
     density = np.asarray(km.resize((W, H), Image.BILINEAR)).astype(np.float32) / 255.0
     core = (core * np.clip((0.5 - density) / 0.3, 0, 1)).astype(np.float32)
 
-    if a.colors == "light":
-        # Bright light sources without color (sun, lamps, a light shaft). They
-        # stand out from the surroundings but may be larger than colored spots,
-        # so the density limit is more lenient.
+    colored_share = float((core > 0.15).mean())
+    # Bright light only as a fallback: with clear color accents (lava, lamps,
+    # neon) they alone glow, otherwise the white wall of a bright image would
+    # light up as well.
+    if a.colors == "light" and colored_share < 0.003:
+        # Light sources without color (sun, lamps, a light shaft). They stand
+        # out from the surroundings but may be larger than colored spots, so
+        # the density limit is more lenient.
         lv0 = 0.80 + 0.12 * t
         lk0 = 0.06 + 0.08 * t
         light_candidate = (val > lv0) & (contrast > lk0)
