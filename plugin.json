@@ -1,0 +1,29 @@
+{
+    "id": "audioFx",
+    "name": "AudioFX",
+    "description": "Audio visualizer along a screen edge with eight styles, wallpaper glow that pulses to the beat, and a round player disc desktop widget; cava only runs while something is playing",
+    "version": "1.3.0",
+    "author": "satoshoe",
+    "type": "composite",
+    "capabilities": [
+        "daemon",
+        "control-center",
+        "desktop-widget"
+    ],
+    "components": {
+        "daemon": "./AudioFxDaemon.qml",
+        "widget": "./AudioFxWidget.qml",
+        "desktop": "./AudioFxDiscDesktop.qml"
+    },
+    "settings": "./AudioFxSettings.qml",
+    "icon": "graphic_eq",
+    "requires_dms": ">=1.6.1",
+    "dependencies": [
+        "cava"
+    ],
+    "permissions": [
+        "settings_read",
+        "settings_write",
+        "process"
+    ]
+}

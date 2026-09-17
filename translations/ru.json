@@ -1,0 +1,302 @@
+{
+    "Wave": {
+        "Wave": "Волна"
+    },
+    "Bars": {
+        "Bars": "Полосы"
+    },
+    "Style": {
+        "Style": "Стиль"
+    },
+    "Filled wave": {
+        "Filled wave": "Заполненная волна"
+    },
+    "Wave as a line": {
+        "Wave as a line": "Волна линией"
+    },
+    "Mirrored wave": {
+        "Mirrored wave": "Зеркальная волна"
+    },
+    "Mirrored bars": {
+        "Mirrored bars": "Зеркальные полосы"
+    },
+    "Hanging bars": {
+        "Hanging bars": "Свисающие полосы"
+    },
+    "Blocks": {
+        "Blocks": "Блоки"
+    },
+    "Dots": {
+        "Dots": "Точки"
+    },
+    "Edge": {
+        "Edge": "Край"
+    },
+    "Which screen edge the visualizer sits on. The frame and the bar are left out automatically.": {
+        "Which screen edge the visualizer sits on. The frame and the bar are left out automatically.": "У какого края экрана находится визуализатор. Рамка и панель учитываются автоматически."
+    },
+    "Bottom": {
+        "Bottom": "Снизу"
+    },
+    "Top": {
+        "Top": "Сверху"
+    },
+    "Left": {
+        "Left": "Слева"
+    },
+    "Right": {
+        "Right": "Справа"
+    },
+    "Depth": {
+        "Depth": "Глубина"
+    },
+    "How far the visualizer reaches from the edge into the screen.": {
+        "How far the visualizer reaches from the edge into the screen.": "Насколько далеко визуализатор заходит от края вглубь экрана."
+    },
+    "Side inset": {
+        "Side inset": "Боковой отступ"
+    },
+    "Extra space at both ends, beyond the frame and the bar. The area gets narrower, so the curve tapers off earlier.": {
+        "Extra space at both ends, beyond the frame and the bar. The area gets narrower, so the curve tapers off earlier.": "Дополнительный отступ с обоих концов, помимо рамки и панели. Область становится уже, поэтому кривая затухает раньше."
+    },
+    "Taper off at the ends": {
+        "Taper off at the ends": "Затухание к краям"
+    },
+    "The curve starts and ends on the baseline instead of breaking off at the edge.": {
+        "The curve starts and ends on the baseline instead of breaking off at the edge.": "Кривая начинается и заканчивается на базовой линии, а не обрывается у края."
+    },
+    "Taper length": {
+        "Taper length": "Длина затухания"
+    },
+    "Share of the length on each side over which the amplitudes are faded down. Small means a short, steep drop.": {
+        "Share of the length on each side over which the amplitudes are faded down. Small means a short, steep drop.": "Доля длины с каждой стороны, на которой амплитуда плавно уменьшается. Малое значение даёт короткий крутой спад."
+    },
+    "Bands": {
+        "Bands": "Полосы частот"
+    },
+    "How finely the spectrum is split. More bands cost little, most of the work is the drawing area.": {
+        "How finely the spectrum is split. More bands cost little, most of the work is the drawing area.": "Насколько детально разбивается спектр. Больше полос почти ничего не стоит, основная нагрузка приходится на площадь отрисовки."
+    },
+    "Gap": {
+        "Gap": "Промежуток"
+    },
+    "Blocks per bar": {
+        "Blocks per bar": "Блоков в полосе"
+    },
+    "The most expensive style: bands × blocks gives the number of elements. With 48 bands and 12 blocks that is 576.": {
+        "The most expensive style: bands × blocks gives the number of elements. With 48 bands and 12 blocks that is 576.": "Самый затратный стиль: полосы × блоки дают число элементов. При 48 полосах и 12 блоках это 576."
+    },
+    "Line width": {
+        "Line width": "Толщина линии"
+    },
+    "Smoothing": {
+        "Smoothing": "Сглаживание"
+    },
+    "Intermediate points per segment. Higher means rounder between the bands. The shape stays the same, it is just drawn more finely.": {
+        "Intermediate points per segment. Higher means rounder between the bands. The shape stays the same, it is just drawn more finely.": "Промежуточные точки на отрезок. Чем больше, тем плавнее между полосами. Форма не меняется, просто рисуется детальнее."
+    },
+    "Color": {
+        "Color": "Цвет"
+    },
+    "Accent": {
+        "Accent": "Акцент"
+    },
+    "Secondary color": {
+        "Secondary color": "Дополнительный цвет"
+    },
+    "Gradient": {
+        "Gradient": "Градиент"
+    },
+    "Text color": {
+        "Text color": "Цвет текста"
+    },
+    "Opacity": {
+        "Opacity": "Непрозрачность"
+    },
+    "Background opacity": {
+        "Background opacity": "Непрозрачность фона"
+    },
+    "0 leaves the area behind the visualizer clear.": {
+        "0 leaves the area behind the visualizer clear.": "0 оставляет область за визуализатором прозрачной."
+    },
+    "Sensitivity": {
+        "Sensitivity": "Чувствительность"
+    },
+    "Fixed gain. Deliberately without cava's automatic sensitivity: it would turn quiet passages up so far that the noise floor flickers.": {
+        "Fixed gain. Deliberately without cava's automatic sensitivity: it would turn quiet passages up so far that the noise floor flickers.": "Фиксированное усиление. Намеренно без автоматической чувствительности cava: она так усиливала бы тихие места, что начинал бы мерцать фоновый шум."
+    },
+    "Calmness": {
+        "Calmness": "Плавность"
+    },
+    "cava's noise reduction. Low means fast and jittery, high means calm and sluggish. cava's own default is 77.": {
+        "cava's noise reduction. Low means fast and jittery, high means calm and sluggish. cava's own default is 77.": "Шумоподавление cava. Низкое значение: быстро и дёргано, высокое: спокойно и медленно. По умолчанию в cava 77."
+    },
+    "Frame rate": {
+        "Frame rate": "Частота кадров"
+    },
+    "Costs the most. 30 looks smooth, 20 saves noticeably more.": {
+        "Costs the most. 30 looks smooth, 20 saves noticeably more.": "Сильнее всего влияет на нагрузку. 30 выглядит плавно, 20 заметно экономит ещё."
+    },
+    "Only during playback": {
+        "Only during playback": "Только во время воспроизведения"
+    },
+    "Stops cava as soon as no player is playing, instead of just hiding it. Off: cava always runs, but sound without MPRIS is shown too.": {
+        "Stops cava as soon as no player is playing, instead of just hiding it. Off: cava always runs, but sound without MPRIS is shown too.": "Останавливает cava, как только ни один плеер не играет, а не просто скрывает вывод. Выкл.: cava работает всегда, зато отображается и звук без MPRIS."
+    },
+    "Hide after silence": {
+        "Hide after silence": "Скрывать после тишины"
+    },
+    "Glow in the wallpaper": {
+        "Glow in the wallpaper": "Свечение на обоях"
+    },
+    "Glowing spots of the wallpaper pulse to the beat. AudioFX finds the spots itself: saturated, bright pixels in the most common hue of the image. Requires python3 with numpy and Pillow.": {
+        "Glowing spots of the wallpaper pulse to the beat. AudioFX finds the spots itself: saturated, bright pixels in the most common hue of the image. Requires python3 with numpy and Pillow.": "Светящиеся места обоев пульсируют в такт. AudioFX находит их сам: насыщенные яркие пиксели самого частого оттенка изображения. Требуется python3 с numpy и Pillow."
+    },
+    "Enable glow": {
+        "Enable glow": "Включить свечение"
+    },
+    "How the spots pulse": {
+        "How the spots pulse": "Как пульсируют места"
+    },
+    "All spots at once, to the bass and volume.": {
+        "All spots at once, to the bass and volume.": "Все места одновременно, в такт басу и громкости."
+    },
+    "Every bass beat sends a light front through the spots, from the image edge along the streams of light.": {
+        "Every bass beat sends a light front through the spots, from the image edge along the streams of light.": "Каждый удар баса посылает световую волну через места, от края изображения вдоль световых потоков."
+    },
+    "Every spot flickers at its own rhythm, driven by mids and highs.": {
+        "Every spot flickers at its own rhythm, driven by mids and highs.": "Каждое место мерцает в своём ритме под действием средних и высоких частот."
+    },
+    "The image becomes a spectrum: low notes on the left, high notes on the right.": {
+        "The image becomes a spectrum: low notes on the left, high notes on the right.": "Изображение превращается в спектр: низкие частоты слева, высокие справа."
+    },
+    "Large spots follow the bass, medium ones the mids, small ones the highs.": {
+        "Large spots follow the bass, medium ones the mids, small ones the highs.": "Крупные места следуют басу, средние средним частотам, мелкие высоким."
+    },
+    "All at once": {
+        "All at once": "Одновременно"
+    },
+    "By pitch": {
+        "By pitch": "По высоте тона"
+    },
+    "Flowing": {
+        "Flowing": "Поток"
+    },
+    "Sparkle": {
+        "Sparkle": "Мерцание"
+    },
+    "Spectrum across the width": {
+        "Spectrum across the width": "Спектр по ширине"
+    },
+    "Glow strength": {
+        "Glow strength": "Яркость свечения"
+    },
+    "How brightly the spots themselves light up.": {
+        "How brightly the spots themselves light up.": "Насколько ярко вспыхивают сами места."
+    },
+    "Halo": {
+        "Halo": "Ореол"
+    },
+    "The soft shine around the spots. 0 lets only the spots themselves glow.": {
+        "The soft shine around the spots. 0 lets only the spots themselves glow.": "Мягкое сияние вокруг мест. При 0 светятся только сами места."
+    },
+    "Light front speed": {
+        "Light front speed": "Скорость световой волны"
+    },
+    "Without playback": {
+        "Without playback": "Без воспроизведения"
+    },
+    "Off": {
+        "Off": "Выкл."
+    },
+    "Glow quietly": {
+        "Glow quietly": "Тихо тлеть"
+    },
+    "Breathe slowly": {
+        "Breathe slowly": "Медленно дышать"
+    },
+    "Glow color": {
+        "Glow color": "Цвет свечения"
+    },
+    "From the image": {
+        "From the image": "Из изображения"
+    },
+    "Detection threshold": {
+        "Detection threshold": "Порог распознавания"
+    },
+    "Low finds more spots, high only the strongest. After a change the image is analyzed again (about a second).": {
+        "Low finds more spots, high only the strongest. After a change the image is analyzed again (about a second).": "Низкий порог находит больше мест, высокий только самые яркие. После изменения изображение анализируется заново (около секунды)."
+    },
+    "All saturated colors": {
+        "All saturated colors": "Все насыщенные цвета"
+    },
+    "Off: only the most common hue glows (right for an image with a single glow color). On: every saturated, bright color.": {
+        "Off: only the most common hue glows (right for an image with a single glow color). On: every saturated, bright color.": "Выкл.: светится только самый частый оттенок (подходит для изображения с одним цветом свечения). Вкл.: любой насыщенный яркий цвет."
+    },
+    "Glow frame rate": {
+        "Glow frame rate": "Частота кадров свечения"
+    },
+    "The glow covers the whole screen, and niri recomposites every frame. 30 is enough for the beat.": {
+        "The glow covers the whole screen, and niri recomposites every frame. 30 is enough for the beat.": "Свечение покрывает весь экран, и niri заново компонует каждый кадр. Для ритма достаточно 30."
+    },
+    "Player disc": {
+        "Player disc": "Диск плеера"
+    },
+    "Rotation": {
+        "Rotation": "Вращение"
+    },
+    "Seconds per turn, 0 keeps the cover still. Only turns during playback.": {
+        "Seconds per turn, 0 keeps the cover still. Only turns during playback.": "Секунд на оборот, 0 оставляет обложку неподвижной. Вращается только во время воспроизведения."
+    },
+    "The disc is a desktop widget: Settings > Desktop Widgets > Add Desktop Widget > AudioFX. Position, size, grid and workspaces are set there.": {
+        "The disc is a desktop widget: Settings > Desktop Widgets > Add Desktop Widget > AudioFX. Position, size, grid and workspaces are set there.": "Диск является виджетом рабочего стола: Настройки > Виджеты рабочего стола > Добавить виджет рабочего стола > AudioFX. Положение, размер, сетка и рабочие пространства задаются там."
+    },
+    "Disc visualizer": {
+        "Disc visualizer": "Визуализатор диска"
+    },
+    "Wave like the dashboard": {
+        "Wave like the dashboard": "Волна как на панели управления"
+    },
+    "Bars in a circle": {
+        "Bars in a circle": "Полосы по кругу"
+    },
+    "Glow ring": {
+        "Glow ring": "Светящееся кольцо"
+    },
+    "Number of bars": {
+        "Number of bars": "Количество полос"
+    },
+    "Only for “Bars in a circle”. More bars get thinner.": {
+        "Only for “Bars in a circle”. More bars get thinner.": "Только для «Полосы по кругу». Чем больше полос, тем они тоньше."
+    },
+    "Visualizer amplitude": {
+        "Visualizer amplitude": "Амплитуда визуализатора"
+    },
+    "100 % matches the dashboard.": {
+        "100 % matches the dashboard.": "100 % соответствует панели управления."
+    },
+    "Progress ring width": {
+        "Progress ring width": "Толщина кольца прогресса"
+    },
+    "Visualizer": {
+        "Visualizer": "Визуализатор"
+    },
+    "Running": {
+        "Running": "Работает"
+    },
+    "Ready": {
+        "Ready": "Готов"
+    },
+    "Which spots glow": {
+        "Which spots glow": "Какие места светятся"
+    },
+    "Only the most common color suits an image with a single glow color. Bright light also lights up white or pale sources such as a sun or a light shaft.": {
+        "Only the most common color suits an image with a single glow color. Bright light also lights up white or pale sources such as a sun or a light shaft.": "Самый частый цвет подходит для изображения с одним цветом свечения. Со светлым светом светятся и белые или бледные источники, например солнце или световой луч."
+    },
+    "Most common color": {
+        "Most common color": "Самый частый цвет"
+    },
+    "Colors and bright light": {
+        "Colors and bright light": "Цвета и яркий свет"
+    }
+}

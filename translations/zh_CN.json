@@ -1,0 +1,302 @@
+{
+    "Wave": {
+        "Wave": "波形"
+    },
+    "Bars": {
+        "Bars": "柱状"
+    },
+    "Style": {
+        "Style": "样式"
+    },
+    "Filled wave": {
+        "Filled wave": "填充波形"
+    },
+    "Wave as a line": {
+        "Wave as a line": "线条波形"
+    },
+    "Mirrored wave": {
+        "Mirrored wave": "镜像波形"
+    },
+    "Mirrored bars": {
+        "Mirrored bars": "镜像柱状"
+    },
+    "Hanging bars": {
+        "Hanging bars": "倒挂柱状"
+    },
+    "Blocks": {
+        "Blocks": "方块"
+    },
+    "Dots": {
+        "Dots": "圆点"
+    },
+    "Edge": {
+        "Edge": "边缘"
+    },
+    "Which screen edge the visualizer sits on. The frame and the bar are left out automatically.": {
+        "Which screen edge the visualizer sits on. The frame and the bar are left out automatically.": "可视化效果所在的屏幕边缘。边框和状态栏会自动避开。"
+    },
+    "Bottom": {
+        "Bottom": "底部"
+    },
+    "Top": {
+        "Top": "顶部"
+    },
+    "Left": {
+        "Left": "左侧"
+    },
+    "Right": {
+        "Right": "右侧"
+    },
+    "Depth": {
+        "Depth": "深度"
+    },
+    "How far the visualizer reaches from the edge into the screen.": {
+        "How far the visualizer reaches from the edge into the screen.": "可视化效果从边缘向屏幕内延伸的距离。"
+    },
+    "Side inset": {
+        "Side inset": "两端内缩"
+    },
+    "Extra space at both ends, beyond the frame and the bar. The area gets narrower, so the curve tapers off earlier.": {
+        "Extra space at both ends, beyond the frame and the bar. The area gets narrower, so the curve tapers off earlier.": "在边框和状态栏之外，两端再额外留出空间。区域变窄，曲线也会更早收尾。"
+    },
+    "Taper off at the ends": {
+        "Taper off at the ends": "两端渐弱"
+    },
+    "The curve starts and ends on the baseline instead of breaking off at the edge.": {
+        "The curve starts and ends on the baseline instead of breaking off at the edge.": "曲线从基线开始并回到基线，而不是在边缘处突然截断。"
+    },
+    "Taper length": {
+        "Taper length": "渐弱长度"
+    },
+    "Share of the length on each side over which the amplitudes are faded down. Small means a short, steep drop.": {
+        "Share of the length on each side over which the amplitudes are faded down. Small means a short, steep drop.": "每侧长度中振幅逐渐减弱的比例。数值越小，下降越短越陡。"
+    },
+    "Bands": {
+        "Bands": "频段"
+    },
+    "How finely the spectrum is split. More bands cost little, most of the work is the drawing area.": {
+        "How finely the spectrum is split. More bands cost little, most of the work is the drawing area.": "频谱划分的精细程度。增加频段开销很小，主要开销在于绘制面积。"
+    },
+    "Gap": {
+        "Gap": "间距"
+    },
+    "Blocks per bar": {
+        "Blocks per bar": "每柱方块数"
+    },
+    "The most expensive style: bands × blocks gives the number of elements. With 48 bands and 12 blocks that is 576.": {
+        "The most expensive style: bands × blocks gives the number of elements. With 48 bands and 12 blocks that is 576.": "开销最大的样式：频段数 × 方块数即为元素数量。48 个频段和 12 个方块就是 576 个。"
+    },
+    "Line width": {
+        "Line width": "线宽"
+    },
+    "Smoothing": {
+        "Smoothing": "平滑度"
+    },
+    "Intermediate points per segment. Higher means rounder between the bands. The shape stays the same, it is just drawn more finely.": {
+        "Intermediate points per segment. Higher means rounder between the bands. The shape stays the same, it is just drawn more finely.": "每段的插值点数。数值越高，频段之间越圆滑。形状不变，只是绘制得更精细。"
+    },
+    "Color": {
+        "Color": "颜色"
+    },
+    "Accent": {
+        "Accent": "强调色"
+    },
+    "Secondary color": {
+        "Secondary color": "次要颜色"
+    },
+    "Gradient": {
+        "Gradient": "渐变"
+    },
+    "Text color": {
+        "Text color": "文字颜色"
+    },
+    "Opacity": {
+        "Opacity": "不透明度"
+    },
+    "Background opacity": {
+        "Background opacity": "背景不透明度"
+    },
+    "0 leaves the area behind the visualizer clear.": {
+        "0 leaves the area behind the visualizer clear.": "0 表示可视化效果后方不绘制背景。"
+    },
+    "Sensitivity": {
+        "Sensitivity": "灵敏度"
+    },
+    "Fixed gain. Deliberately without cava's automatic sensitivity: it would turn quiet passages up so far that the noise floor flickers.": {
+        "Fixed gain. Deliberately without cava's automatic sensitivity: it would turn quiet passages up so far that the noise floor flickers.": "固定增益。刻意不使用 cava 的自动灵敏度：它会把安静段落放大到底噪也开始闪烁。"
+    },
+    "Calmness": {
+        "Calmness": "平稳度"
+    },
+    "cava's noise reduction. Low means fast and jittery, high means calm and sluggish. cava's own default is 77.": {
+        "cava's noise reduction. Low means fast and jittery, high means calm and sluggish. cava's own default is 77.": "cava 的降噪。低值快速但抖动，高值平稳但迟缓。cava 自身的默认值为 77。"
+    },
+    "Frame rate": {
+        "Frame rate": "帧率"
+    },
+    "Costs the most. 30 looks smooth, 20 saves noticeably more.": {
+        "Costs the most. 30 looks smooth, 20 saves noticeably more.": "开销最大的一项。30 已足够流畅，20 还能明显节省资源。"
+    },
+    "Only during playback": {
+        "Only during playback": "仅在播放时"
+    },
+    "Stops cava as soon as no player is playing, instead of just hiding it. Off: cava always runs, but sound without MPRIS is shown too.": {
+        "Stops cava as soon as no player is playing, instead of just hiding it. Off: cava always runs, but sound without MPRIS is shown too.": "没有播放器在播放时直接停止 cava，而不只是隐藏显示。关闭时：cava 始终运行，但非 MPRIS 的声音也会显示。"
+    },
+    "Hide after silence": {
+        "Hide after silence": "静音后隐藏"
+    },
+    "Glow in the wallpaper": {
+        "Glow in the wallpaper": "壁纸辉光"
+    },
+    "Glowing spots of the wallpaper pulse to the beat. AudioFX finds the spots itself: saturated, bright pixels in the most common hue of the image. Requires python3 with numpy and Pillow.": {
+        "Glowing spots of the wallpaper pulse to the beat. AudioFX finds the spots itself: saturated, bright pixels in the most common hue of the image. Requires python3 with numpy and Pillow.": "壁纸中发光的区域会随节拍脉动。AudioFX 会自动找出这些区域：图像中最常见色相里饱和且明亮的像素。需要安装带 numpy 和 Pillow 的 python3。"
+    },
+    "Enable glow": {
+        "Enable glow": "启用辉光"
+    },
+    "How the spots pulse": {
+        "How the spots pulse": "脉动方式"
+    },
+    "All spots at once, to the bass and volume.": {
+        "All spots at once, to the bass and volume.": "所有区域同时随低音和音量脉动。"
+    },
+    "Every bass beat sends a light front through the spots, from the image edge along the streams of light.": {
+        "Every bass beat sends a light front through the spots, from the image edge along the streams of light.": "每次低音节拍都会从图像边缘沿着光流送出一道光波穿过各区域。"
+    },
+    "Every spot flickers at its own rhythm, driven by mids and highs.": {
+        "Every spot flickers at its own rhythm, driven by mids and highs.": "每个区域按自己的节奏闪烁，由中音和高音驱动。"
+    },
+    "The image becomes a spectrum: low notes on the left, high notes on the right.": {
+        "The image becomes a spectrum: low notes on the left, high notes on the right.": "整幅图像变成频谱：左侧为低音，右侧为高音。"
+    },
+    "Large spots follow the bass, medium ones the mids, small ones the highs.": {
+        "Large spots follow the bass, medium ones the mids, small ones the highs.": "大区域跟随低音，中等区域跟随中音，小区域跟随高音。"
+    },
+    "All at once": {
+        "All at once": "同步"
+    },
+    "By pitch": {
+        "By pitch": "按音高"
+    },
+    "Flowing": {
+        "Flowing": "流动"
+    },
+    "Sparkle": {
+        "Sparkle": "闪烁"
+    },
+    "Spectrum across the width": {
+        "Spectrum across the width": "横向频谱"
+    },
+    "Glow strength": {
+        "Glow strength": "辉光强度"
+    },
+    "How brightly the spots themselves light up.": {
+        "How brightly the spots themselves light up.": "发光区域本身的亮度。"
+    },
+    "Halo": {
+        "Halo": "光晕"
+    },
+    "The soft shine around the spots. 0 lets only the spots themselves glow.": {
+        "The soft shine around the spots. 0 lets only the spots themselves glow.": "区域周围的柔和光芒。设为 0 时只有区域本身发光。"
+    },
+    "Light front speed": {
+        "Light front speed": "光波速度"
+    },
+    "Without playback": {
+        "Without playback": "未播放时"
+    },
+    "Off": {
+        "Off": "关闭"
+    },
+    "Glow quietly": {
+        "Glow quietly": "微微发光"
+    },
+    "Breathe slowly": {
+        "Breathe slowly": "缓慢呼吸"
+    },
+    "Glow color": {
+        "Glow color": "辉光颜色"
+    },
+    "From the image": {
+        "From the image": "取自图像"
+    },
+    "Detection threshold": {
+        "Detection threshold": "检测阈值"
+    },
+    "Low finds more spots, high only the strongest. After a change the image is analyzed again (about a second).": {
+        "Low finds more spots, high only the strongest. After a change the image is analyzed again (about a second).": "低值会找到更多区域，高值只保留最强的区域。更改后会重新分析图像（约一秒）。"
+    },
+    "All saturated colors": {
+        "All saturated colors": "所有饱和色"
+    },
+    "Off: only the most common hue glows (right for an image with a single glow color). On: every saturated, bright color.": {
+        "Off: only the most common hue glows (right for an image with a single glow color). On: every saturated, bright color.": "关闭：只有最常见的色相发光（适合只有一种发光颜色的图像）。开启：所有饱和且明亮的颜色都会发光。"
+    },
+    "Glow frame rate": {
+        "Glow frame rate": "辉光帧率"
+    },
+    "The glow covers the whole screen, and niri recomposites every frame. 30 is enough for the beat.": {
+        "The glow covers the whole screen, and niri recomposites every frame. 30 is enough for the beat.": "辉光覆盖整个屏幕，niri 每一帧都要重新合成。30 帧足以跟上节拍。"
+    },
+    "Player disc": {
+        "Player disc": "播放器圆盘"
+    },
+    "Rotation": {
+        "Rotation": "旋转"
+    },
+    "Seconds per turn, 0 keeps the cover still. Only turns during playback.": {
+        "Seconds per turn, 0 keeps the cover still. Only turns during playback.": "旋转一圈所需的秒数，0 表示封面不转。仅在播放时旋转。"
+    },
+    "The disc is a desktop widget: Settings > Desktop Widgets > Add Desktop Widget > AudioFX. Position, size, grid and workspaces are set there.": {
+        "The disc is a desktop widget: Settings > Desktop Widgets > Add Desktop Widget > AudioFX. Position, size, grid and workspaces are set there.": "圆盘是一个桌面部件：设置 > 桌面部件 > 添加桌面部件 > AudioFX。位置、大小、网格和工作区都在那里设置。"
+    },
+    "Disc visualizer": {
+        "Disc visualizer": "圆盘可视化"
+    },
+    "Wave like the dashboard": {
+        "Wave like the dashboard": "与仪表盘相同的波形"
+    },
+    "Bars in a circle": {
+        "Bars in a circle": "环形柱状"
+    },
+    "Glow ring": {
+        "Glow ring": "辉光环"
+    },
+    "Number of bars": {
+        "Number of bars": "柱数量"
+    },
+    "Only for “Bars in a circle”. More bars get thinner.": {
+        "Only for “Bars in a circle”. More bars get thinner.": "仅适用于“环形柱状”。柱越多越细。"
+    },
+    "Visualizer amplitude": {
+        "Visualizer amplitude": "可视化振幅"
+    },
+    "100 % matches the dashboard.": {
+        "100 % matches the dashboard.": "100 % 与仪表盘一致。"
+    },
+    "Progress ring width": {
+        "Progress ring width": "进度环宽度"
+    },
+    "Visualizer": {
+        "Visualizer": "可视化"
+    },
+    "Running": {
+        "Running": "运行中"
+    },
+    "Ready": {
+        "Ready": "就绪"
+    },
+    "Which spots glow": {
+        "Which spots glow": "哪些位置发光"
+    },
+    "Only the most common color suits an image with a single glow color. Bright light also lights up white or pale sources such as a sun or a light shaft.": {
+        "Only the most common color suits an image with a single glow color. Bright light also lights up white or pale sources such as a sun or a light shaft.": "只取最常见的颜色适合只有一种发光色的图片。包含明亮光线时，太阳或光束这类白色或浅色光源也会发光。"
+    },
+    "Most common color": {
+        "Most common color": "最常见的颜色"
+    },
+    "Colors and bright light": {
+        "Colors and bright light": "颜色和明亮光线"
+    }
+}

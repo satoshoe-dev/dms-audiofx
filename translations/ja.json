@@ -1,0 +1,302 @@
+{
+    "Wave": {
+        "Wave": "ウェーブ"
+    },
+    "Bars": {
+        "Bars": "バー"
+    },
+    "Style": {
+        "Style": "スタイル"
+    },
+    "Filled wave": {
+        "Filled wave": "塗りつぶしウェーブ"
+    },
+    "Wave as a line": {
+        "Wave as a line": "線のウェーブ"
+    },
+    "Mirrored wave": {
+        "Mirrored wave": "ミラーウェーブ"
+    },
+    "Mirrored bars": {
+        "Mirrored bars": "ミラーバー"
+    },
+    "Hanging bars": {
+        "Hanging bars": "吊り下げバー"
+    },
+    "Blocks": {
+        "Blocks": "ブロック"
+    },
+    "Dots": {
+        "Dots": "ドット"
+    },
+    "Edge": {
+        "Edge": "画面端"
+    },
+    "Which screen edge the visualizer sits on. The frame and the bar are left out automatically.": {
+        "Which screen edge the visualizer sits on. The frame and the bar are left out automatically.": "ビジュアライザーを配置する画面端。フレームとバーの部分は自動的に避けます。"
+    },
+    "Bottom": {
+        "Bottom": "下"
+    },
+    "Top": {
+        "Top": "上"
+    },
+    "Left": {
+        "Left": "左"
+    },
+    "Right": {
+        "Right": "右"
+    },
+    "Depth": {
+        "Depth": "奥行き"
+    },
+    "How far the visualizer reaches from the edge into the screen.": {
+        "How far the visualizer reaches from the edge into the screen.": "画面端から内側へビジュアライザーが伸びる距離。"
+    },
+    "Side inset": {
+        "Side inset": "両端の余白"
+    },
+    "Extra space at both ends, beyond the frame and the bar. The area gets narrower, so the curve tapers off earlier.": {
+        "Extra space at both ends, beyond the frame and the bar. The area gets narrower, so the curve tapers off earlier.": "フレームとバーに加えて両端に余白を追加します。領域が狭くなり、カーブが早めに収束します。"
+    },
+    "Taper off at the ends": {
+        "Taper off at the ends": "両端で収束させる"
+    },
+    "The curve starts and ends on the baseline instead of breaking off at the edge.": {
+        "The curve starts and ends on the baseline instead of breaking off at the edge.": "カーブが端で途切れず、ベースラインから始まりベースラインで終わります。"
+    },
+    "Taper length": {
+        "Taper length": "収束の長さ"
+    },
+    "Share of the length on each side over which the amplitudes are faded down. Small means a short, steep drop.": {
+        "Share of the length on each side over which the amplitudes are faded down. Small means a short, steep drop.": "各側で振幅を弱めていく長さの割合。小さいほど短く急な落ち込みになります。"
+    },
+    "Bands": {
+        "Bands": "バンド数"
+    },
+    "How finely the spectrum is split. More bands cost little, most of the work is the drawing area.": {
+        "How finely the spectrum is split. More bands cost little, most of the work is the drawing area.": "スペクトルを分割する細かさ。バンドを増やしても負荷は小さく、主な負荷は描画面積です。"
+    },
+    "Gap": {
+        "Gap": "間隔"
+    },
+    "Blocks per bar": {
+        "Blocks per bar": "バーあたりのブロック数"
+    },
+    "The most expensive style: bands × blocks gives the number of elements. With 48 bands and 12 blocks that is 576.": {
+        "The most expensive style: bands × blocks gives the number of elements. With 48 bands and 12 blocks that is 576.": "最も負荷の高いスタイル：バンド数 × ブロック数が要素数になります。48 バンドと 12 ブロックなら 576 個です。"
+    },
+    "Line width": {
+        "Line width": "線の太さ"
+    },
+    "Smoothing": {
+        "Smoothing": "なめらかさ"
+    },
+    "Intermediate points per segment. Higher means rounder between the bands. The shape stays the same, it is just drawn more finely.": {
+        "Intermediate points per segment. Higher means rounder between the bands. The shape stays the same, it is just drawn more finely.": "区間ごとの中間点の数。高いほどバンド間が丸くなります。形は同じで、より細かく描かれるだけです。"
+    },
+    "Color": {
+        "Color": "色"
+    },
+    "Accent": {
+        "Accent": "アクセント"
+    },
+    "Secondary color": {
+        "Secondary color": "セカンダリカラー"
+    },
+    "Gradient": {
+        "Gradient": "グラデーション"
+    },
+    "Text color": {
+        "Text color": "文字色"
+    },
+    "Opacity": {
+        "Opacity": "不透明度"
+    },
+    "Background opacity": {
+        "Background opacity": "背景の不透明度"
+    },
+    "0 leaves the area behind the visualizer clear.": {
+        "0 leaves the area behind the visualizer clear.": "0 にするとビジュアライザーの背後には何も描きません。"
+    },
+    "Sensitivity": {
+        "Sensitivity": "感度"
+    },
+    "Fixed gain. Deliberately without cava's automatic sensitivity: it would turn quiet passages up so far that the noise floor flickers.": {
+        "Fixed gain. Deliberately without cava's automatic sensitivity: it would turn quiet passages up so far that the noise floor flickers.": "固定ゲイン。cava の自動感度はあえて使いません。静かな部分を上げすぎて、ノイズがちらつくためです。"
+    },
+    "Calmness": {
+        "Calmness": "落ち着き"
+    },
+    "cava's noise reduction. Low means fast and jittery, high means calm and sluggish. cava's own default is 77.": {
+        "cava's noise reduction. Low means fast and jittery, high means calm and sluggish. cava's own default is 77.": "cava のノイズ低減。低いと速く落ち着きがなく、高いと穏やかで反応が遅くなります。cava 自体の既定値は 77 です。"
+    },
+    "Frame rate": {
+        "Frame rate": "フレームレート"
+    },
+    "Costs the most. 30 looks smooth, 20 saves noticeably more.": {
+        "Costs the most. 30 looks smooth, 20 saves noticeably more.": "最も負荷に影響します。30 で滑らかに見え、20 ならさらに目に見えて軽くなります。"
+    },
+    "Only during playback": {
+        "Only during playback": "再生中のみ"
+    },
+    "Stops cava as soon as no player is playing, instead of just hiding it. Off: cava always runs, but sound without MPRIS is shown too.": {
+        "Stops cava as soon as no player is playing, instead of just hiding it. Off: cava always runs, but sound without MPRIS is shown too.": "再生中のプレーヤーがなくなったら、表示を隠すだけでなく cava を停止します。オフ：cava は常に動作しますが、MPRIS 以外の音も表示されます。"
+    },
+    "Hide after silence": {
+        "Hide after silence": "無音後に非表示"
+    },
+    "Glow in the wallpaper": {
+        "Glow in the wallpaper": "壁紙のグロー"
+    },
+    "Glowing spots of the wallpaper pulse to the beat. AudioFX finds the spots itself: saturated, bright pixels in the most common hue of the image. Requires python3 with numpy and Pillow.": {
+        "Glowing spots of the wallpaper pulse to the beat. AudioFX finds the spots itself: saturated, bright pixels in the most common hue of the image. Requires python3 with numpy and Pillow.": "壁紙の光っている部分がビートに合わせて脈打ちます。どこを光らせるかは AudioFX が自動で見つけます（画像で最も多い色相の、鮮やかで明るいピクセル）。numpy と Pillow を含む python3 が必要です。"
+    },
+    "Enable glow": {
+        "Enable glow": "グローを有効化"
+    },
+    "How the spots pulse": {
+        "How the spots pulse": "光の脈動のしかた"
+    },
+    "All spots at once, to the bass and volume.": {
+        "All spots at once, to the bass and volume.": "すべての部分が同時に、低音と音量に合わせて光ります。"
+    },
+    "Every bass beat sends a light front through the spots, from the image edge along the streams of light.": {
+        "Every bass beat sends a light front through the spots, from the image edge along the streams of light.": "低音のビートごとに、画像の端から光の流れに沿って光の波が走ります。"
+    },
+    "Every spot flickers at its own rhythm, driven by mids and highs.": {
+        "Every spot flickers at its own rhythm, driven by mids and highs.": "各部分が中音域と高音域に合わせて、それぞれのリズムできらめきます。"
+    },
+    "The image becomes a spectrum: low notes on the left, high notes on the right.": {
+        "The image becomes a spectrum: low notes on the left, high notes on the right.": "画像全体がスペクトルになります。左が低音、右が高音です。"
+    },
+    "Large spots follow the bass, medium ones the mids, small ones the highs.": {
+        "Large spots follow the bass, medium ones the mids, small ones the highs.": "大きな部分は低音、中くらいの部分は中音、小さな部分は高音に反応します。"
+    },
+    "All at once": {
+        "All at once": "同時"
+    },
+    "By pitch": {
+        "By pitch": "音域別"
+    },
+    "Flowing": {
+        "Flowing": "流れる"
+    },
+    "Sparkle": {
+        "Sparkle": "きらめき"
+    },
+    "Spectrum across the width": {
+        "Spectrum across the width": "横幅いっぱいのスペクトル"
+    },
+    "Glow strength": {
+        "Glow strength": "グローの強さ"
+    },
+    "How brightly the spots themselves light up.": {
+        "How brightly the spots themselves light up.": "光る部分そのものの明るさ。"
+    },
+    "Halo": {
+        "Halo": "ハロー"
+    },
+    "The soft shine around the spots. 0 lets only the spots themselves glow.": {
+        "The soft shine around the spots. 0 lets only the spots themselves glow.": "光る部分の周りの柔らかな輝き。0 にすると部分そのものだけが光ります。"
+    },
+    "Light front speed": {
+        "Light front speed": "光の波の速さ"
+    },
+    "Without playback": {
+        "Without playback": "再生していないとき"
+    },
+    "Off": {
+        "Off": "オフ"
+    },
+    "Glow quietly": {
+        "Glow quietly": "静かに光る"
+    },
+    "Breathe slowly": {
+        "Breathe slowly": "ゆっくり呼吸"
+    },
+    "Glow color": {
+        "Glow color": "グローの色"
+    },
+    "From the image": {
+        "From the image": "画像から"
+    },
+    "Detection threshold": {
+        "Detection threshold": "検出しきい値"
+    },
+    "Low finds more spots, high only the strongest. After a change the image is analyzed again (about a second).": {
+        "Low finds more spots, high only the strongest. After a change the image is analyzed again (about a second).": "低いほど多くの部分を検出し、高いほど最も強い部分だけを検出します。変更後は画像を再解析します（約 1 秒）。"
+    },
+    "All saturated colors": {
+        "All saturated colors": "すべての鮮やかな色"
+    },
+    "Off: only the most common hue glows (right for an image with a single glow color). On: every saturated, bright color.": {
+        "Off: only the most common hue glows (right for an image with a single glow color). On: every saturated, bright color.": "オフ：最も多い色相だけが光ります（光の色が 1 色だけの画像に最適）。オン：鮮やかで明るい色すべてが光ります。"
+    },
+    "Glow frame rate": {
+        "Glow frame rate": "グローのフレームレート"
+    },
+    "The glow covers the whole screen, and niri recomposites every frame. 30 is enough for the beat.": {
+        "The glow covers the whole screen, and niri recomposites every frame. 30 is enough for the beat.": "グローは画面全体を覆い、niri はフレームごとに合成し直します。ビートには 30 で十分です。"
+    },
+    "Player disc": {
+        "Player disc": "プレーヤーディスク"
+    },
+    "Rotation": {
+        "Rotation": "回転"
+    },
+    "Seconds per turn, 0 keeps the cover still. Only turns during playback.": {
+        "Seconds per turn, 0 keeps the cover still. Only turns during playback.": "1 回転にかかる秒数。0 でカバーは回転しません。再生中のみ回転します。"
+    },
+    "The disc is a desktop widget: Settings > Desktop Widgets > Add Desktop Widget > AudioFX. Position, size, grid and workspaces are set there.": {
+        "The disc is a desktop widget: Settings > Desktop Widgets > Add Desktop Widget > AudioFX. Position, size, grid and workspaces are set there.": "ディスクはデスクトップウィジェットです：設定 > デスクトップウィジェット > デスクトップウィジェットを追加 > AudioFX。位置、サイズ、グリッド、ワークスペースはそこで設定します。"
+    },
+    "Disc visualizer": {
+        "Disc visualizer": "ディスクのビジュアライザー"
+    },
+    "Wave like the dashboard": {
+        "Wave like the dashboard": "ダッシュボードと同じウェーブ"
+    },
+    "Bars in a circle": {
+        "Bars in a circle": "円形のバー"
+    },
+    "Glow ring": {
+        "Glow ring": "グローリング"
+    },
+    "Number of bars": {
+        "Number of bars": "バーの数"
+    },
+    "Only for “Bars in a circle”. More bars get thinner.": {
+        "Only for “Bars in a circle”. More bars get thinner.": "「円形のバー」のときのみ。バーを増やすほど細くなります。"
+    },
+    "Visualizer amplitude": {
+        "Visualizer amplitude": "ビジュアライザーの振れ幅"
+    },
+    "100 % matches the dashboard.": {
+        "100 % matches the dashboard.": "100 % でダッシュボードと同じです。"
+    },
+    "Progress ring width": {
+        "Progress ring width": "進行リングの太さ"
+    },
+    "Visualizer": {
+        "Visualizer": "ビジュアライザー"
+    },
+    "Running": {
+        "Running": "動作中"
+    },
+    "Ready": {
+        "Ready": "待機中"
+    },
+    "Which spots glow": {
+        "Which spots glow": "どの部分が光るか"
+    },
+    "Only the most common color suits an image with a single glow color. Bright light also lights up white or pale sources such as a sun or a light shaft.": {
+        "Only the most common color suits an image with a single glow color. Bright light also lights up white or pale sources such as a sun or a light shaft.": "最も多い色は、光の色が一つの画像に向いています。明るい光では、太陽や光の筋のような白っぽい光源も光ります。"
+    },
+    "Most common color": {
+        "Most common color": "最も多い色"
+    },
+    "Colors and bright light": {
+        "Colors and bright light": "色と明るい光"
+    }
+}

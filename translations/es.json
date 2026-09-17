@@ -1,0 +1,302 @@
+{
+    "Wave": {
+        "Wave": "Onda"
+    },
+    "Bars": {
+        "Bars": "Barras"
+    },
+    "Style": {
+        "Style": "Estilo"
+    },
+    "Filled wave": {
+        "Filled wave": "Onda rellena"
+    },
+    "Wave as a line": {
+        "Wave as a line": "Onda como línea"
+    },
+    "Mirrored wave": {
+        "Mirrored wave": "Onda reflejada"
+    },
+    "Mirrored bars": {
+        "Mirrored bars": "Barras reflejadas"
+    },
+    "Hanging bars": {
+        "Hanging bars": "Barras colgantes"
+    },
+    "Blocks": {
+        "Blocks": "Bloques"
+    },
+    "Dots": {
+        "Dots": "Puntos"
+    },
+    "Edge": {
+        "Edge": "Borde"
+    },
+    "Which screen edge the visualizer sits on. The frame and the bar are left out automatically.": {
+        "Which screen edge the visualizer sits on. The frame and the bar are left out automatically.": "En qué borde de la pantalla se coloca el visualizador. El marco y la barra se dejan libres automáticamente."
+    },
+    "Bottom": {
+        "Bottom": "Abajo"
+    },
+    "Top": {
+        "Top": "Arriba"
+    },
+    "Left": {
+        "Left": "Izquierda"
+    },
+    "Right": {
+        "Right": "Derecha"
+    },
+    "Depth": {
+        "Depth": "Profundidad"
+    },
+    "How far the visualizer reaches from the edge into the screen.": {
+        "How far the visualizer reaches from the edge into the screen.": "Hasta dónde llega el visualizador desde el borde hacia la pantalla."
+    },
+    "Side inset": {
+        "Side inset": "Margen lateral"
+    },
+    "Extra space at both ends, beyond the frame and the bar. The area gets narrower, so the curve tapers off earlier.": {
+        "Extra space at both ends, beyond the frame and the bar. The area gets narrower, so the curve tapers off earlier.": "Espacio adicional en ambos extremos, además del marco y la barra. El área se estrecha, por lo que la curva se desvanece antes."
+    },
+    "Taper off at the ends": {
+        "Taper off at the ends": "Desvanecer en los extremos"
+    },
+    "The curve starts and ends on the baseline instead of breaking off at the edge.": {
+        "The curve starts and ends on the baseline instead of breaking off at the edge.": "La curva empieza y termina en la línea base en lugar de cortarse en el borde."
+    },
+    "Taper length": {
+        "Taper length": "Longitud del desvanecimiento"
+    },
+    "Share of the length on each side over which the amplitudes are faded down. Small means a short, steep drop.": {
+        "Share of the length on each side over which the amplitudes are faded down. Small means a short, steep drop.": "Parte de la longitud de cada lado en la que se reducen las amplitudes. Un valor pequeño significa una caída corta y pronunciada."
+    },
+    "Bands": {
+        "Bands": "Bandas"
+    },
+    "How finely the spectrum is split. More bands cost little, most of the work is the drawing area.": {
+        "How finely the spectrum is split. More bands cost little, most of the work is the drawing area.": "Qué tan fino se divide el espectro. Más bandas cuestan poco; la mayor parte del trabajo es el área de dibujo."
+    },
+    "Gap": {
+        "Gap": "Separación"
+    },
+    "Blocks per bar": {
+        "Blocks per bar": "Bloques por barra"
+    },
+    "The most expensive style: bands × blocks gives the number of elements. With 48 bands and 12 blocks that is 576.": {
+        "The most expensive style: bands × blocks gives the number of elements. With 48 bands and 12 blocks that is 576.": "El estilo más costoso: bandas × bloques da el número de elementos. Con 48 bandas y 12 bloques son 576."
+    },
+    "Line width": {
+        "Line width": "Grosor de línea"
+    },
+    "Smoothing": {
+        "Smoothing": "Suavizado"
+    },
+    "Intermediate points per segment. Higher means rounder between the bands. The shape stays the same, it is just drawn more finely.": {
+        "Intermediate points per segment. Higher means rounder between the bands. The shape stays the same, it is just drawn more finely.": "Puntos intermedios por segmento. Un valor más alto redondea más entre las bandas. La forma es la misma, solo se dibuja con más detalle."
+    },
+    "Color": {
+        "Color": "Color"
+    },
+    "Accent": {
+        "Accent": "Acento"
+    },
+    "Secondary color": {
+        "Secondary color": "Color secundario"
+    },
+    "Gradient": {
+        "Gradient": "Degradado"
+    },
+    "Text color": {
+        "Text color": "Color del texto"
+    },
+    "Opacity": {
+        "Opacity": "Opacidad"
+    },
+    "Background opacity": {
+        "Background opacity": "Opacidad del fondo"
+    },
+    "0 leaves the area behind the visualizer clear.": {
+        "0 leaves the area behind the visualizer clear.": "0 deja libre el área detrás del visualizador."
+    },
+    "Sensitivity": {
+        "Sensitivity": "Sensibilidad"
+    },
+    "Fixed gain. Deliberately without cava's automatic sensitivity: it would turn quiet passages up so far that the noise floor flickers.": {
+        "Fixed gain. Deliberately without cava's automatic sensitivity: it would turn quiet passages up so far that the noise floor flickers.": "Ganancia fija. Sin la sensibilidad automática de cava a propósito: subiría tanto los pasajes suaves que el ruido de fondo parpadearía."
+    },
+    "Calmness": {
+        "Calmness": "Calma"
+    },
+    "cava's noise reduction. Low means fast and jittery, high means calm and sluggish. cava's own default is 77.": {
+        "cava's noise reduction. Low means fast and jittery, high means calm and sluggish. cava's own default is 77.": "Reducción de ruido de cava. Bajo significa rápido e inquieto, alto significa tranquilo y lento. El valor predeterminado de cava es 77."
+    },
+    "Frame rate": {
+        "Frame rate": "Tasa de fotogramas"
+    },
+    "Costs the most. 30 looks smooth, 20 saves noticeably more.": {
+        "Costs the most. 30 looks smooth, 20 saves noticeably more.": "Es lo que más cuesta. 30 se ve fluido, 20 ahorra bastante más."
+    },
+    "Only during playback": {
+        "Only during playback": "Solo durante la reproducción"
+    },
+    "Stops cava as soon as no player is playing, instead of just hiding it. Off: cava always runs, but sound without MPRIS is shown too.": {
+        "Stops cava as soon as no player is playing, instead of just hiding it. Off: cava always runs, but sound without MPRIS is shown too.": "Detiene cava en cuanto ningún reproductor está sonando, en lugar de solo ocultarlo. Desactivado: cava siempre se ejecuta, pero también se muestra el sonido sin MPRIS."
+    },
+    "Hide after silence": {
+        "Hide after silence": "Ocultar tras silencio"
+    },
+    "Glow in the wallpaper": {
+        "Glow in the wallpaper": "Resplandor en el fondo de pantalla"
+    },
+    "Glowing spots of the wallpaper pulse to the beat. AudioFX finds the spots itself: saturated, bright pixels in the most common hue of the image. Requires python3 with numpy and Pillow.": {
+        "Glowing spots of the wallpaper pulse to the beat. AudioFX finds the spots itself: saturated, bright pixels in the most common hue of the image. Requires python3 with numpy and Pillow.": "Las zonas luminosas del fondo de pantalla laten al ritmo. AudioFX encuentra esas zonas por sí mismo: píxeles saturados y brillantes en el tono más frecuente de la imagen. Requiere python3 con numpy y Pillow."
+    },
+    "Enable glow": {
+        "Enable glow": "Activar resplandor"
+    },
+    "How the spots pulse": {
+        "How the spots pulse": "Cómo laten las zonas"
+    },
+    "All spots at once, to the bass and volume.": {
+        "All spots at once, to the bass and volume.": "Todas las zonas a la vez, al ritmo de los graves y el volumen."
+    },
+    "Every bass beat sends a light front through the spots, from the image edge along the streams of light.": {
+        "Every bass beat sends a light front through the spots, from the image edge along the streams of light.": "Cada golpe de graves envía un frente de luz por las zonas, desde el borde de la imagen a lo largo de los trazos de luz."
+    },
+    "Every spot flickers at its own rhythm, driven by mids and highs.": {
+        "Every spot flickers at its own rhythm, driven by mids and highs.": "Cada zona parpadea a su propio ritmo, impulsada por medios y agudos."
+    },
+    "The image becomes a spectrum: low notes on the left, high notes on the right.": {
+        "The image becomes a spectrum: low notes on the left, high notes on the right.": "La imagen se convierte en un espectro: graves a la izquierda, agudos a la derecha."
+    },
+    "Large spots follow the bass, medium ones the mids, small ones the highs.": {
+        "Large spots follow the bass, medium ones the mids, small ones the highs.": "Las zonas grandes siguen los graves, las medianas los medios y las pequeñas los agudos."
+    },
+    "All at once": {
+        "All at once": "Todo a la vez"
+    },
+    "By pitch": {
+        "By pitch": "Por tono"
+    },
+    "Flowing": {
+        "Flowing": "Fluido"
+    },
+    "Sparkle": {
+        "Sparkle": "Destellos"
+    },
+    "Spectrum across the width": {
+        "Spectrum across the width": "Espectro a lo ancho"
+    },
+    "Glow strength": {
+        "Glow strength": "Intensidad del resplandor"
+    },
+    "How brightly the spots themselves light up.": {
+        "How brightly the spots themselves light up.": "Con qué brillo se iluminan las propias zonas."
+    },
+    "Halo": {
+        "Halo": "Halo"
+    },
+    "The soft shine around the spots. 0 lets only the spots themselves glow.": {
+        "The soft shine around the spots. 0 lets only the spots themselves glow.": "El brillo suave alrededor de las zonas. Con 0 solo brillan las propias zonas."
+    },
+    "Light front speed": {
+        "Light front speed": "Velocidad del frente de luz"
+    },
+    "Without playback": {
+        "Without playback": "Sin reproducción"
+    },
+    "Off": {
+        "Off": "Desactivado"
+    },
+    "Glow quietly": {
+        "Glow quietly": "Brillar suavemente"
+    },
+    "Breathe slowly": {
+        "Breathe slowly": "Respirar despacio"
+    },
+    "Glow color": {
+        "Glow color": "Color del resplandor"
+    },
+    "From the image": {
+        "From the image": "De la imagen"
+    },
+    "Detection threshold": {
+        "Detection threshold": "Umbral de detección"
+    },
+    "Low finds more spots, high only the strongest. After a change the image is analyzed again (about a second).": {
+        "Low finds more spots, high only the strongest. After a change the image is analyzed again (about a second).": "Bajo encuentra más zonas, alto solo las más intensas. Tras un cambio, la imagen se analiza de nuevo (alrededor de un segundo)."
+    },
+    "All saturated colors": {
+        "All saturated colors": "Todos los colores saturados"
+    },
+    "Off: only the most common hue glows (right for an image with a single glow color). On: every saturated, bright color.": {
+        "Off: only the most common hue glows (right for an image with a single glow color). On: every saturated, bright color.": "Desactivado: solo brilla el tono más frecuente (lo adecuado para una imagen con un único color luminoso). Activado: cualquier color saturado y brillante."
+    },
+    "Glow frame rate": {
+        "Glow frame rate": "Tasa de fotogramas del resplandor"
+    },
+    "The glow covers the whole screen, and niri recomposites every frame. 30 is enough for the beat.": {
+        "The glow covers the whole screen, and niri recomposites every frame. 30 is enough for the beat.": "El resplandor cubre toda la pantalla y niri recompone cada fotograma. 30 basta para seguir el ritmo."
+    },
+    "Player disc": {
+        "Player disc": "Disco del reproductor"
+    },
+    "Rotation": {
+        "Rotation": "Rotación"
+    },
+    "Seconds per turn, 0 keeps the cover still. Only turns during playback.": {
+        "Seconds per turn, 0 keeps the cover still. Only turns during playback.": "Segundos por vuelta; 0 deja la portada quieta. Solo gira durante la reproducción."
+    },
+    "The disc is a desktop widget: Settings > Desktop Widgets > Add Desktop Widget > AudioFX. Position, size, grid and workspaces are set there.": {
+        "The disc is a desktop widget: Settings > Desktop Widgets > Add Desktop Widget > AudioFX. Position, size, grid and workspaces are set there.": "El disco es un widget de escritorio: Ajustes > Widgets del Escritorio > Añadir Widget de Escritorio > AudioFX. La posición, el tamaño, la cuadrícula y los espacios de trabajo se configuran allí."
+    },
+    "Disc visualizer": {
+        "Disc visualizer": "Visualizador del disco"
+    },
+    "Wave like the dashboard": {
+        "Wave like the dashboard": "Onda como en el panel"
+    },
+    "Bars in a circle": {
+        "Bars in a circle": "Barras en círculo"
+    },
+    "Glow ring": {
+        "Glow ring": "Anillo luminoso"
+    },
+    "Number of bars": {
+        "Number of bars": "Número de barras"
+    },
+    "Only for “Bars in a circle”. More bars get thinner.": {
+        "Only for “Bars in a circle”. More bars get thinner.": "Solo para «Barras en círculo». Con más barras, cada una es más fina."
+    },
+    "Visualizer amplitude": {
+        "Visualizer amplitude": "Amplitud del visualizador"
+    },
+    "100 % matches the dashboard.": {
+        "100 % matches the dashboard.": "100 % equivale al panel."
+    },
+    "Progress ring width": {
+        "Progress ring width": "Grosor del anillo de progreso"
+    },
+    "Visualizer": {
+        "Visualizer": "Visualizador"
+    },
+    "Running": {
+        "Running": "En marcha"
+    },
+    "Ready": {
+        "Ready": "Listo"
+    },
+    "Which spots glow": {
+        "Which spots glow": "Qué puntos brillan"
+    },
+    "Only the most common color suits an image with a single glow color. Bright light also lights up white or pale sources such as a sun or a light shaft.": {
+        "Only the most common color suits an image with a single glow color. Bright light also lights up white or pale sources such as a sun or a light shaft.": "Solo el color más frecuente encaja en una imagen con un único color de brillo. Con luz intensa también brillan fuentes blancas o pálidas, como un sol o un haz de luz."
+    },
+    "Most common color": {
+        "Most common color": "Color más frecuente"
+    },
+    "Colors and bright light": {
+        "Colors and bright light": "Colores y luz intensa"
+    }
+}
