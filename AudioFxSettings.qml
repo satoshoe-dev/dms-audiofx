@@ -489,6 +489,15 @@ PluginSettings {
     }
 
     SliderSetting {
+        settingKey: "discOpacity"
+        label: I18n.trFor("audioFx", "Opacity")
+        defaultValue: 100
+        minimum: 10
+        maximum: 100
+        unit: "%"
+    }
+
+    SliderSetting {
         settingKey: "discBars"
         label: I18n.trFor("audioFx", "Number of bars")
         description: I18n.trFor("audioFx", "Only for “Bars in a circle”. More bars get thinner.")

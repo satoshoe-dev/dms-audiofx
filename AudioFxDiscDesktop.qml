@@ -59,6 +59,11 @@ Item {
         root._t;
         return cfg("discForm", "blob");
     }
+    // Only the visualizer around the cover; the cover stays opaque
+    readonly property real vizOpacity: {
+        root._t;
+        return Math.max(10, Math.min(100, cfg("discOpacity", 100))) / 100;
+    }
     readonly property int barCount: {
         root._t;
         return Math.max(24, Math.min(180, cfg("discBars", 72)));
@@ -213,6 +218,7 @@ Item {
             anchors.centerIn: parent
             visible: root.form === "blob"
             playing: root.playing && root.form === "blob"
+            opacity: root.vizOpacity
             amplitudeScale: root.amplitude
         }
 
@@ -231,6 +237,7 @@ Item {
         anchors.fill: parent
         z: -1
         active: root.visible && root.form === "bars"
+        strength: root.vizOpacity
         playing: root.playing
         coverSize: root.coverSize
         amplitude: root.amplitude
@@ -242,6 +249,7 @@ Item {
         anchors.fill: parent
         z: -1
         active: root.visible && root.form === "glow"
+        opacity: root.vizOpacity
         playing: root.playing
         coverSize: root.coverSize
         amplitude: root.amplitude

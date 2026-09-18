@@ -37,7 +37,9 @@ Item {
     property bool cavaAvailable: false
 
     // fade out once nothing comes in anymore
-    opacity: wantsData ? 1 : 0
+    // strength: opacity chosen in the settings, the fade stays in charge
+    property real strength: 1
+    opacity: wantsData ? strength : 0
     Behavior on opacity {
         NumberAnimation {
             duration: 400
