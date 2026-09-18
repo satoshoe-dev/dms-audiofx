@@ -16,7 +16,14 @@ PluginSettings {
     id: root
     pluginId: "audioFx"
 
+    // Set by Settings > Desktop Widgets when this page belongs to one disc.
+    // There only the disc settings take effect (they go into that widget's
+    // config), so the edge visualizer and the glow stay on the plugin page.
+    property string instanceId: ""
+    readonly property bool asWidget: instanceId !== ""
+
     SelectionSetting {
+        visible: !root.asWidget
         id: formSetting
         settingKey: "form"
         label: I18n.trFor("audioFx", "Style")
@@ -60,6 +67,7 @@ PluginSettings {
     readonly property bool isWave: ["wave", "waveFilled", "waveMirrored"].indexOf(formSetting.value) >= 0
 
     SelectionSetting {
+        visible: !root.asWidget
         settingKey: "edge"
         label: I18n.trFor("audioFx", "Edge")
         description: I18n.trFor("audioFx", "Which screen edge the visualizer sits on. The frame and the bar are left out automatically.")
@@ -85,6 +93,7 @@ PluginSettings {
     }
 
     SliderSetting {
+        visible: !root.asWidget
         settingKey: "depth"
         label: I18n.trFor("audioFx", "Depth")
         description: I18n.trFor("audioFx", "How far the visualizer reaches from the edge into the screen.")
@@ -95,6 +104,7 @@ PluginSettings {
     }
 
     SliderSetting {
+        visible: !root.asWidget
         settingKey: "sideInset"
         label: I18n.trFor("audioFx", "Side inset")
         description: I18n.trFor("audioFx", "Extra space at both ends, beyond the frame and the bar. The area gets narrower, so the curve tapers off earlier.")
@@ -105,7 +115,7 @@ PluginSettings {
     }
 
     ToggleSetting {
-        visible: root.isWave
+        visible: !root.asWidget && (root.isWave)
         settingKey: "taper"
         label: I18n.trFor("audioFx", "Taper off at the ends")
         description: I18n.trFor("audioFx", "The curve starts and ends on the baseline instead of breaking off at the edge.")
@@ -113,7 +123,7 @@ PluginSettings {
     }
 
     SliderSetting {
-        visible: root.isWave
+        visible: !root.asWidget && (root.isWave)
         settingKey: "taperWidth"
         label: I18n.trFor("audioFx", "Taper length")
         description: I18n.trFor("audioFx", "Share of the length on each side over which the amplitudes are faded down. Small means a short, steep drop.")
@@ -124,6 +134,7 @@ PluginSettings {
     }
 
     SliderSetting {
+        visible: !root.asWidget
         settingKey: "bands"
         label: I18n.trFor("audioFx", "Bands")
         description: I18n.trFor("audioFx", "How finely the spectrum is split. More bands cost little, most of the work is the drawing area.")
@@ -133,7 +144,7 @@ PluginSettings {
     }
 
     SliderSetting {
-        visible: !root.isWave
+        visible: !root.asWidget && (!root.isWave)
         settingKey: "gap"
         label: I18n.trFor("audioFx", "Gap")
         defaultValue: 4
@@ -143,7 +154,7 @@ PluginSettings {
     }
 
     SliderSetting {
-        visible: formSetting.value === "blocks"
+        visible: !root.asWidget && (formSetting.value === "blocks")
         settingKey: "segments"
         label: I18n.trFor("audioFx", "Blocks per bar")
         description: I18n.trFor("audioFx", "The most expensive style: bands × blocks gives the number of elements. With 48 bands and 12 blocks that is 576.")
@@ -153,7 +164,7 @@ PluginSettings {
     }
 
     SliderSetting {
-        visible: formSetting.value === "wave"
+        visible: !root.asWidget && (formSetting.value === "wave")
         settingKey: "lineWidth"
         label: I18n.trFor("audioFx", "Line width")
         defaultValue: 3
@@ -163,7 +174,7 @@ PluginSettings {
     }
 
     SliderSetting {
-        visible: root.isWave
+        visible: !root.asWidget && (root.isWave)
         settingKey: "smoothing"
         label: I18n.trFor("audioFx", "Smoothing")
         description: I18n.trFor("audioFx", "Intermediate points per segment. Higher means rounder between the bands. The shape stays the same, it is just drawn more finely.")
@@ -173,6 +184,7 @@ PluginSettings {
     }
 
     SelectionSetting {
+        visible: !root.asWidget
         settingKey: "colorChoice"
         label: I18n.trFor("audioFx", "Color")
         defaultValue: "primary"
@@ -197,6 +209,7 @@ PluginSettings {
     }
 
     SliderSetting {
+        visible: !root.asWidget
         settingKey: "fgOpacity"
         label: I18n.trFor("audioFx", "Opacity")
         defaultValue: 50
@@ -206,6 +219,7 @@ PluginSettings {
     }
 
     SliderSetting {
+        visible: !root.asWidget
         settingKey: "bgOpacity"
         label: I18n.trFor("audioFx", "Background opacity")
         description: I18n.trFor("audioFx", "0 leaves the area behind the visualizer clear.")
@@ -216,6 +230,7 @@ PluginSettings {
     }
 
     SliderSetting {
+        visible: !root.asWidget
         settingKey: "sensitivity"
         label: I18n.trFor("audioFx", "Sensitivity")
         description: I18n.trFor("audioFx", "Fixed gain. Deliberately without cava's automatic sensitivity: it would turn quiet passages up so far that the noise floor flickers.")
@@ -226,6 +241,7 @@ PluginSettings {
     }
 
     SliderSetting {
+        visible: !root.asWidget
         settingKey: "noiseReduction"
         label: I18n.trFor("audioFx", "Calmness")
         description: I18n.trFor("audioFx", "cava's noise reduction. Low means fast and jittery, high means calm and sluggish. cava's own default is 77.")
@@ -235,6 +251,7 @@ PluginSettings {
     }
 
     SliderSetting {
+        visible: !root.asWidget
         settingKey: "frameRate"
         label: I18n.trFor("audioFx", "Frame rate")
         description: I18n.trFor("audioFx", "Costs the most. 30 looks smooth, 20 saves noticeably more.")
@@ -245,6 +262,7 @@ PluginSettings {
     }
 
     ToggleSetting {
+        visible: !root.asWidget
         settingKey: "onlyWhilePlaying"
         label: I18n.trFor("audioFx", "Only during playback")
         description: I18n.trFor("audioFx", "Stops cava as soon as no player is playing, instead of just hiding it. Off: cava always runs, but sound without MPRIS is shown too.")
@@ -252,6 +270,7 @@ PluginSettings {
     }
 
     SliderSetting {
+        visible: !root.asWidget
         settingKey: "idleSeconds"
         label: I18n.trFor("audioFx", "Hide after silence")
         defaultValue: 5
@@ -261,6 +280,7 @@ PluginSettings {
     }
 
     StyledText {
+        visible: !root.asWidget
         width: parent ? parent.width : implicitWidth
         topPadding: Theme.spacingL
         text: I18n.trFor("audioFx", "Glow in the wallpaper")
@@ -270,6 +290,7 @@ PluginSettings {
     }
 
     StyledText {
+        visible: !root.asWidget
         width: parent ? parent.width : implicitWidth
         text: I18n.trFor("audioFx", "Glowing spots of the wallpaper pulse to the beat. AudioFX finds the spots itself: saturated, bright pixels in the most common hue of the image. Requires python3 with numpy and Pillow.")
         wrapMode: Text.WordWrap
@@ -278,6 +299,7 @@ PluginSettings {
     }
 
     ToggleSetting {
+        visible: !root.asWidget
         id: glowToggle
         settingKey: "glowOn"
         label: I18n.trFor("audioFx", "Enable glow")
@@ -286,7 +308,7 @@ PluginSettings {
 
     SelectionSetting {
         id: glowModeSetting
-        visible: glowToggle.value
+        visible: !root.asWidget && (glowToggle.value)
         settingKey: "glowMode"
         label: I18n.trFor("audioFx", "How the spots pulse")
         description: {
@@ -329,7 +351,7 @@ PluginSettings {
     }
 
     SliderSetting {
-        visible: glowToggle.value
+        visible: !root.asWidget && (glowToggle.value)
         settingKey: "glowStrength"
         label: I18n.trFor("audioFx", "Glow strength")
         description: I18n.trFor("audioFx", "How brightly the spots themselves light up.")
@@ -340,7 +362,7 @@ PluginSettings {
     }
 
     SliderSetting {
-        visible: glowToggle.value
+        visible: !root.asWidget && (glowToggle.value)
         settingKey: "glowBloom"
         label: I18n.trFor("audioFx", "Halo")
         description: I18n.trFor("audioFx", "The soft shine around the spots. 0 lets only the spots themselves glow.")
@@ -351,7 +373,7 @@ PluginSettings {
     }
 
     SliderSetting {
-        visible: glowToggle.value && glowModeSetting.value === "flow"
+        visible: !root.asWidget && (glowToggle.value && glowModeSetting.value === "flow")
         settingKey: "glowSpeed"
         label: I18n.trFor("audioFx", "Light front speed")
         defaultValue: 100
@@ -361,7 +383,7 @@ PluginSettings {
     }
 
     SelectionSetting {
-        visible: glowToggle.value
+        visible: !root.asWidget && (glowToggle.value)
         settingKey: "glowIdle"
         label: I18n.trFor("audioFx", "Without playback")
         defaultValue: "off"
@@ -382,7 +404,7 @@ PluginSettings {
     }
 
     SelectionSetting {
-        visible: glowToggle.value
+        visible: !root.asWidget && (glowToggle.value)
         settingKey: "glowColor"
         label: I18n.trFor("audioFx", "Glow color")
         defaultValue: "image"
@@ -399,7 +421,7 @@ PluginSettings {
     }
 
     SliderSetting {
-        visible: glowToggle.value
+        visible: !root.asWidget && (glowToggle.value)
         settingKey: "glowThreshold"
         label: I18n.trFor("audioFx", "Detection threshold")
         description: I18n.trFor("audioFx", "Low finds more spots, high only the strongest. After a change the image is analyzed again (about a second).")
@@ -409,7 +431,7 @@ PluginSettings {
     }
 
     SelectionSetting {
-        visible: glowToggle.value
+        visible: !root.asWidget && (glowToggle.value)
         settingKey: "glowColors"
         label: I18n.trFor("audioFx", "Which spots glow")
         description: I18n.trFor("audioFx", "An image with a single glow color is served by its most common color. The third option only falls back to bright light, such as a sun or a light shaft, when an image has no colored spots at all.")
@@ -431,7 +453,7 @@ PluginSettings {
     }
 
     SliderSetting {
-        visible: glowToggle.value
+        visible: !root.asWidget && (glowToggle.value)
         settingKey: "glowFps"
         label: I18n.trFor("audioFx", "Glow frame rate")
         description: I18n.trFor("audioFx", "The glow covers the whole screen, and niri recomposites every frame. 30 is enough for the beat.")
@@ -462,7 +484,8 @@ PluginSettings {
 
     StyledText {
         width: parent ? parent.width : implicitWidth
-        text: I18n.trFor("audioFx", "The disc is a desktop widget: Settings > Desktop Widgets > Add Desktop Widget > AudioFX. Position, size, grid and workspaces are set there.")
+        visible: !root.asWidget
+        text: I18n.trFor("audioFx", "The disc is a desktop widget: Settings > Desktop Widgets > Add Desktop Widget > AudioFX. Position, size, grid and workspaces are set there.") + " " + I18n.trFor("audioFx", "The values below apply to every disc that has no own setting; each disc can be set on its own in its widget card.")
         wrapMode: Text.WordWrap
         font.pixelSize: Theme.fontSizeSmall
         color: Theme.surfaceVariantText

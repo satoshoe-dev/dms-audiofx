@@ -298,5 +298,8 @@
     },
     "Colors, or bright light if there are none": {
         "Colors, or bright light if there are none": "颜色，若没有则用明亮光线"
+    },
+    "The values below apply to every disc that has no own setting; each disc can be set on its own in its widget card.": {
+        "The values below apply to every disc that has no own setting; each disc can be set on its own in its widget card.": "以下数值适用于所有没有单独设置的唱片；每个唱片都可以在其小部件卡片中单独设置。"
     }
 }

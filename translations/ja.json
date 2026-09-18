@@ -298,5 +298,8 @@
     },
     "Colors, or bright light if there are none": {
         "Colors, or bright light if there are none": "色、なければ明るい光"
+    },
+    "The values below apply to every disc that has no own setting; each disc can be set on its own in its widget card.": {
+        "The values below apply to every disc that has no own setting; each disc can be set on its own in its widget card.": "以下の値は個別の設定がないすべてのディスクに適用されます。各ディスクはウィジェットカードで個別に設定できます。"
     }
 }

@@ -298,5 +298,8 @@
     },
     "Colors, or bright light if there are none": {
         "Colors, or bright light if there are none": "Colori, altrimenti luce intensa"
+    },
+    "The values below apply to every disc that has no own setting; each disc can be set on its own in its widget card.": {
+        "The values below apply to every disc that has no own setting; each disc can be set on its own in its widget card.": "I valori qui sotto valgono per ogni disco senza impostazione propria; ogni disco si può impostare a parte nella sua scheda widget."
     }
 }
