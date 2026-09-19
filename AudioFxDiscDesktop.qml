@@ -95,6 +95,23 @@ Item {
     property string hiResArt: ""
     property string _hiResFor: ""
     readonly property string _title: player?.trackTitle ?? ""
+    // The player's own cover. Chromium-based players (Pear) always write it to the
+    // same temporary file, so the title goes into the URL: otherwise the image
+    // cache keeps showing the cover of an earlier track.
+    readonly property string _mprisArt: {
+        const p = root.player;
+        if (!p)
+            return "";
+        if (p.trackArtUrl)
+            return p.trackArtUrl;
+        const m = p.metadata;
+        return m && m["mpris:artUrl"] ? m["mpris:artUrl"].toString() : "";
+    }
+    function fallbackArt(title) {
+        if (!root._mprisArt)
+            return "";
+        return root._mprisArt + (root._mprisArt.indexOf("?") < 0 ? "?" : "&") + "t=" + encodeURIComponent(title);
+    }
 
     on_TitleChanged: coverTimer.restart()
     Component.onCompleted: coverTimer.restart()
@@ -108,6 +125,8 @@ Item {
 
     function fetchCover(attempt) {
         const title = root._title;
+        if (attempt === 0)
+            retryTimer.round = 0;
         if (!title) {
             root.hiResArt = "";
             return;
@@ -131,7 +150,10 @@ Item {
                 // the API still lagged behind the title
                 Qt.callLater(() => retryTimer.restart());
             } else if (root._hiResFor !== title) {
-                root.hiResArt = "";
+                // An empty URL would let DankAlbumArt fall back to the last cover it
+                // loaded, which belongs to an earlier track.
+                root.hiResArt = root.fallbackArt(title);
+                root._hiResFor = title;
             }
         };
         xhr.open("GET", "http://127.0.0.1:26538/api/v1/song");
