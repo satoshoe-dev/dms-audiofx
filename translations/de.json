@@ -301,5 +301,11 @@
     },
     "The values below apply to every disc that has no own setting; each disc can be set on its own in its widget card.": {
         "The values below apply to every disc that has no own setting; each disc can be set on its own in its widget card.": "Die Werte hier gelten für jede Scheibe ohne eigene Einstellung; jede Scheibe lässt sich in ihrer Widget-Karte einzeln einstellen."
+    },
+    "Tint in the accent color": {
+        "Tint in the accent color": "In der Akzentfarbe einfärben"
+    },
+    "Tints the cover in the DMS accent color, which changes with the theme or profile. At 0 % it keeps its own colors.": {
+        "Tints the cover in the DMS accent color, which changes with the theme or profile. At 0 % it keeps its own colors.": "Färbt das Titelbild in der DMS-Akzentfarbe ein, die mit Theme oder Profil wechselt. Bei 0 % behält es seine eigenen Farben."
     }
 }

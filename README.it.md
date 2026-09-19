@@ -34,6 +34,8 @@ Un widget su desktop con la copertina rotonda del brano in corso. Gira durante l
 
 Se Pear Desktop (YouTube Music) è in esecuzione con il server API attivo, il disco carica la copertina a 1200 px. MPRIS fornisce solo 120 px per i lettori basati su Chromium.
 
+La copertina si può colorare con il colore d’accento di DMS («Colora con il colore d’accento»), così cambia con il tema o il profilo come il resto della shell.
+
 ## Requisiti
 
 - DankMaterialShell 1.6.1 o successivo

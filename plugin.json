@@ -2,7 +2,7 @@
     "id": "audioFx",
     "name": "AudioFX",
     "description": "Audio visualizer along a screen edge with eight styles, wallpaper glow that pulses to the beat, and a round player disc desktop widget; by default cava only runs while something is playing",
-    "version": "1.3.0",
+    "version": "1.4.0",
     "author": "satoshoe",
     "type": "composite",
     "capabilities": [

@@ -301,5 +301,11 @@
     },
     "The values below apply to every disc that has no own setting; each disc can be set on its own in its widget card.": {
         "The values below apply to every disc that has no own setting; each disc can be set on its own in its widget card.": "Значения ниже действуют для каждого диска без собственной настройки; каждый диск можно настроить отдельно в его карточке виджета."
+    },
+    "Tint in the accent color": {
+        "Tint in the accent color": "Окрашивать в акцентный цвет"
+    },
+    "Tints the cover in the DMS accent color, which changes with the theme or profile. At 0 % it keeps its own colors.": {
+        "Tints the cover in the DMS accent color, which changes with the theme or profile. At 0 % it keeps its own colors.": "Окрашивает обложку в акцентный цвет DMS, который меняется вместе с темой или профилем. При 0 % у неё остаются свои цвета."
     }
 }

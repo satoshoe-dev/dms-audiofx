@@ -34,6 +34,8 @@ Ein Desktop-Widget mit dem runden Cover des aktuellen Titels. Es dreht sich wäh
 
 Läuft Pear Desktop (YouTube Music) mit eingeschaltetem API-Server, lädt die Scheibe das Cover in 1200 px. MPRIS liefert bei Chromium-basierten Playern nur 120 px.
 
+Das Titelbild lässt sich in der DMS-Akzentfarbe einfärben („In der Akzentfarbe einfärben“). So wechselt es mit Theme oder Profil wie die übrige Oberfläche.
+
 ## Voraussetzungen
 
 - DankMaterialShell 1.6.1 oder neuer

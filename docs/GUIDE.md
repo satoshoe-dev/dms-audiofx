@@ -92,7 +92,7 @@ Open Settings → Desktop Widgets → Add Desktop Widget and choose AudioFX. Dra
 
 ![Player disc on the desktop](images/07-disc.png)
 
-Hover the disc for previous, play and next. Under "Player disc" in the AudioFX settings choose the visualizer around the cover: a wave, bars in a circle or a glow ring.
+Hover the disc for previous, play and next. Under "Player disc" in the AudioFX settings choose the visualizer around the cover: a wave, bars in a circle or a glow ring. "Tint in the accent color" colors the cover in the DMS accent color.
 
 ## 8. Commands (optional)
 

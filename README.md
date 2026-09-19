@@ -34,6 +34,8 @@ A desktop widget with the round cover of the current track. It spins while playi
 
 If Pear Desktop (YouTube Music) runs with its API server enabled, the disc loads the cover in 1200 px. MPRIS only delivers 120 px for Chromium based players.
 
+The cover can be tinted in the DMS accent color ("Tint in the accent color"), so it changes with the theme or profile like the rest of the shell.
+
 ## Requirements
 
 - DankMaterialShell 1.6.1 or newer

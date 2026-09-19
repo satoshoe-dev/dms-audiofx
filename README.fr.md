@@ -34,6 +34,8 @@ Un widget de bureau avec la pochette ronde du morceau en cours. Il tourne pendan
 
 Si Pear Desktop (YouTube Music) tourne avec son serveur API activé, le disque charge la pochette en 1200 px. MPRIS ne fournit que 120 px pour les lecteurs basés sur Chromium.
 
+La pochette peut être teintée avec la couleur d’accent de DMS (« Teinter avec la couleur d’accent »). Elle change alors avec le thème ou le profil comme le reste du shell.
+
 ## Prérequis
 
 - DankMaterialShell 1.6.1 ou plus récent

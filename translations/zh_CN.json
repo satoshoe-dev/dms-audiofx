@@ -301,5 +301,11 @@
     },
     "The values below apply to every disc that has no own setting; each disc can be set on its own in its widget card.": {
         "The values below apply to every disc that has no own setting; each disc can be set on its own in its widget card.": "以下数值适用于所有没有单独设置的唱片；每个唱片都可以在其小部件卡片中单独设置。"
+    },
+    "Tint in the accent color": {
+        "Tint in the accent color": "用强调色着色"
+    },
+    "Tints the cover in the DMS accent color, which changes with the theme or profile. At 0 % it keeps its own colors.": {
+        "Tints the cover in the DMS accent color, which changes with the theme or profile. At 0 % it keeps its own colors.": "用 DMS 的强调色为封面着色，该颜色会随主题或配置变化。0 % 时保留封面原有的颜色。"
     }
 }

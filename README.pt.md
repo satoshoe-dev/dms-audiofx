@@ -34,6 +34,8 @@ Um widget da área de trabalho com a capa redonda da faixa atual. Ele gira duran
 
 Se o Pear Desktop (YouTube Music) estiver rodando com o servidor de API ativado, o disco carrega a capa em 1200 px. O MPRIS só entrega 120 px para players baseados em Chromium.
 
+A capa pode ser tingida com a cor de destaque do DMS (“Tingir com a cor de destaque”), assim ela muda com o tema ou o perfil como o resto do shell.
+
 ## Requisitos
 
 - DankMaterialShell 1.6.1 ou mais recente

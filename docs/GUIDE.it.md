@@ -92,7 +92,7 @@ Apri Impostazioni → Widget su desktop → Aggiungi widget su desktop e scegli 
 
 ![Disco del lettore sul desktop](images/07-disc.png)
 
-Passa il puntatore sul disco per brano precedente, riproduzione e brano successivo. In «Disco del lettore», nelle impostazioni di AudioFX, scegli il visualizzatore intorno alla copertina: un'onda, barre in cerchio o un anello luminoso.
+Passa il puntatore sul disco per brano precedente, riproduzione e brano successivo. In «Disco del lettore», nelle impostazioni di AudioFX, scegli il visualizzatore intorno alla copertina: un'onda, barre in cerchio o un anello luminoso. «Colora con il colore d’accento» colora la copertina con il colore d’accento di DMS.
 
 ## 8. Comandi (facoltativo)
 

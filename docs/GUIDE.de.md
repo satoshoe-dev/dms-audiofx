@@ -92,7 +92,7 @@ Leuchtet zu viel oder zu wenig auf, verschiebe „Schwelle der Erkennung“. „
 
 ![Player-Scheibe auf dem Desktop](images/07-disc.png)
 
-Fährst du mit der Maus über die Scheibe, erscheinen Zurück, Wiedergabe und Weiter. Unter „Player-Scheibe“ in den AudioFX-Einstellungen wählst du den Visualizer um das Cover: eine Welle, Balken im Kreis oder einen Glow-Ring.
+Fährst du mit der Maus über die Scheibe, erscheinen Zurück, Wiedergabe und Weiter. Unter „Player-Scheibe“ in den AudioFX-Einstellungen wählst du den Visualizer um das Cover: eine Welle, Balken im Kreis oder einen Glow-Ring. „In der Akzentfarbe einfärben“ färbt das Titelbild in der DMS-Akzentfarbe ein.
 
 ## 8. Befehle (optional)
 

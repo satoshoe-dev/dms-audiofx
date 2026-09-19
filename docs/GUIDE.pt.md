@@ -92,7 +92,7 @@ Abra Configurações → Widgets da Área de Trabalho → Adicionar Widget de Á
 
 ![Disco do player na área de trabalho](images/07-disc.png)
 
-Passe o ponteiro sobre o disco para ver anterior, reproduzir e próxima. Em “Disco do player”, nas configurações do AudioFX, escolha o visualizador em volta da capa: uma onda, barras em círculo ou um anel luminoso.
+Passe o ponteiro sobre o disco para ver anterior, reproduzir e próxima. Em “Disco do player”, nas configurações do AudioFX, escolha o visualizador em volta da capa: uma onda, barras em círculo ou um anel luminoso. “Tingir com a cor de destaque” tinge a capa com a cor de destaque do DMS.
 
 ## 8. Comandos (opcional)
 

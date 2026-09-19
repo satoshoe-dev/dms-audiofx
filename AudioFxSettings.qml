@@ -540,6 +540,16 @@ PluginSettings {
     }
 
     SliderSetting {
+        settingKey: "discTint"
+        label: I18n.trFor("audioFx", "Tint in the accent color")
+        description: I18n.trFor("audioFx", "Tints the cover in the DMS accent color, which changes with the theme or profile. At 0 % it keeps its own colors.")
+        defaultValue: 0
+        minimum: 0
+        maximum: 100
+        unit: "%"
+    }
+
+    SliderSetting {
         settingKey: "discRing"
         label: I18n.trFor("audioFx", "Progress ring width")
         defaultValue: 4

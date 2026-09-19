@@ -92,7 +92,7 @@ Ouvrez Paramètres → Widgets de bureau → Ajouter un widget de bureau et choi
 
 ![Disque du lecteur sur le bureau](images/07-disc.png)
 
-Survolez le disque pour afficher précédent, lecture et suivant. Sous « Disque du lecteur » dans les réglages d'AudioFX, choisissez le visualiseur autour de la pochette : une onde, des barres en cercle ou un anneau lumineux.
+Survolez le disque pour afficher précédent, lecture et suivant. Sous « Disque du lecteur » dans les réglages d'AudioFX, choisissez le visualiseur autour de la pochette : une onde, des barres en cercle ou un anneau lumineux. « Teinter avec la couleur d’accent » teinte la pochette avec la couleur d’accent de DMS.
 
 ## 8. Commandes (facultatif)
 

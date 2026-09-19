@@ -34,6 +34,8 @@
 
 如果 Pear Desktop (YouTube Music) 正在运行并启用了 API 服务器，圆盘会加载 1200 px 的封面。对于基于 Chromium 的播放器，MPRIS 只提供 120 px。
 
+封面可以用 DMS 的强调色着色（“用强调色着色”），这样它会像外壳的其他部分一样随主题或配置变化。
+
 ## 要求
 
 - DankMaterialShell 1.6.1 或更高版本

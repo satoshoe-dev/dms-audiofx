@@ -18,6 +18,7 @@
 pragma ComponentBehavior: Bound
 
 import QtQuick
+import QtQuick.Effects
 import QtQuick.Shapes
 import Quickshell.Services.Mpris
 import qs.Common
@@ -74,6 +75,11 @@ Item {
     readonly property int turnSeconds: {
         root._t;
         return Math.max(0, Math.min(300, cfg("discTurn", 90)));
+    }
+    // 0 keeps the original colors, 1 shows the cover in the accent color only
+    readonly property real tint: {
+        root._t;
+        return Math.max(0, Math.min(100, cfg("discTint", 0))) / 100;
     }
     readonly property int ringWidth: {
         root._t;
@@ -251,6 +257,12 @@ Item {
             artUrl: root.hiResArt
             albumSize: root.coverSize
             showAnimation: false
+
+            layer.enabled: root.tint > 0
+            layer.effect: MultiEffect {
+                colorization: root.tint
+                colorizationColor: Theme.primary
+            }
         }
     }
 

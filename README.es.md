@@ -34,6 +34,8 @@ Un widget de escritorio con la portada redonda de la pista actual. Gira durante 
 
 Si Pear Desktop (YouTube Music) se ejecuta con su servidor API activado, el disco carga la portada a 1200 px. MPRIS solo entrega 120 px en los reproductores basados en Chromium.
 
+La portada se puede teñir con el color de acento de DMS («Teñir con el color de acento»), así cambia con el tema o el perfil como el resto del shell.
+
 ## Requisitos
 
 - DankMaterialShell 1.6.1 o posterior

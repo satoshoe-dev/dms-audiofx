@@ -301,5 +301,11 @@
     },
     "The values below apply to every disc that has no own setting; each disc can be set on its own in its widget card.": {
         "The values below apply to every disc that has no own setting; each disc can be set on its own in its widget card.": "以下の値は個別の設定がないすべてのディスクに適用されます。各ディスクはウィジェットカードで個別に設定できます。"
+    },
+    "Tint in the accent color": {
+        "Tint in the accent color": "アクセントカラーで着色"
+    },
+    "Tints the cover in the DMS accent color, which changes with the theme or profile. At 0 % it keeps its own colors.": {
+        "Tints the cover in the DMS accent color, which changes with the theme or profile. At 0 % it keeps its own colors.": "カバーを DMS のアクセントカラーで着色します。この色はテーマやプロファイルに合わせて変わります。0 % では元の色のままです。"
     }
 }

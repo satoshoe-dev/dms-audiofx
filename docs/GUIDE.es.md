@@ -92,7 +92,7 @@ Abre Ajustes → Widgets del Escritorio → Añadir Widget de Escritorio y elige
 
 ![Disco del reproductor en el escritorio](images/07-disc.png)
 
-Pasa el puntero sobre el disco para ver anterior, reproducir y siguiente. En «Disco del reproductor», dentro de los ajustes de AudioFX, elige el visualizador alrededor de la portada: una onda, barras en círculo o un anillo luminoso.
+Pasa el puntero sobre el disco para ver anterior, reproducir y siguiente. En «Disco del reproductor», dentro de los ajustes de AudioFX, elige el visualizador alrededor de la portada: una onda, barras en círculo o un anillo luminoso. «Teñir con el color de acento» tiñe la portada con el color de acento de DMS.
 
 ## 8. Comandos (opcional)
 
