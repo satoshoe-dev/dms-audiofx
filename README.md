@@ -12,7 +12,7 @@ Step by step with pictures: [installation and setup guide](docs/GUIDE.md).
 
 The visualizer sits along one screen edge and leaves the DMS frame and bar out. There are eight styles: filled wave, wave as a line, mirrored wave, bars, mirrored bars, hanging bars, blocks and dots. Color, opacity, depth, number of bands, gaps and frame rate are adjustable.
 
-cava only runs while an MPRIS player is playing. When playback stops, the process is stopped, not just hidden. A tile in the control center switches the visualizer on and off.
+By default cava only runs while an MPRIS player is playing and ends when playback stops. With "Only during playback" switched off, cava keeps running and also shows sound from programs without MPRIS. A tile in the control center switches the visualizer on and off.
 
 ## Glow
 
@@ -57,8 +57,17 @@ The player disc is a regular DMS desktop widget and behaves like the other widge
 
 ## Installation
 
+From the plugin registry:
+
 ```sh
-git clone https://github.com/21Rebel/dms-audiofx ~/.config/DankMaterialShell/plugins/AudioFx
+dms plugins install audioFx
+dms ipc call plugins enable audioFx
+```
+
+It is also listed in DMS under Settings → Plugins → Browse. To install from the repository instead:
+
+```sh
+git clone https://github.com/satoshoe-dev/dms-audiofx ~/.config/DankMaterialShell/plugins/AudioFx
 dms ipc call plugins enable audioFx
 ```
 

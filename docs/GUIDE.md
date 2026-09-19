@@ -15,8 +15,16 @@ sudo dnf install cava python3-numpy python3-pillow
 
 ## 2. Install and enable the plugin
 
+From the plugin registry:
+
 ```sh
-git clone https://github.com/21Rebel/dms-audiofx ~/.config/DankMaterialShell/plugins/AudioFx
+dms plugins install audioFx
+```
+
+Or clone the repository into your DMS plugin folder:
+
+```sh
+git clone https://github.com/satoshoe-dev/dms-audiofx ~/.config/DankMaterialShell/plugins/AudioFx
 ```
 
 Open Settings → Plugins and switch AudioFX on.

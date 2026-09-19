@@ -12,7 +12,7 @@ Schritt für Schritt mit Bildern: [Anleitung zu Installation und Einrichtung](do
 
 Der Visualizer liegt an einer Bildschirmkante und spart den DMS-Rahmen und die Leiste aus. Es gibt acht Darstellungen: Welle gefüllt, Welle als Linie, Welle gespiegelt, Balken, Balken gespiegelt, Balken hängend, Blöcke und Punkte. Farbe, Deckkraft, Tiefe, Bänder, Abstand und Bildrate lassen sich einstellen.
 
-cava läuft nur, solange ein MPRIS-Player spielt. Endet die Wiedergabe, wird der Prozess beendet und nicht nur ausgeblendet. Eine Kachel im Kontrollzentrum schaltet den Visualizer ein und aus.
+cava läuft in der Grundeinstellung nur, solange ein MPRIS-Player spielt, und wird beendet, sobald die Wiedergabe endet. Ist „Nur bei laufender Wiedergabe“ ausgeschaltet, läuft cava dauerhaft und zeigt auch Ton von Programmen ohne MPRIS. Eine Kachel im Kontrollzentrum schaltet den Visualizer ein und aus.
 
 ## Glow
 
@@ -57,8 +57,17 @@ Die Player-Scheibe ist ein normales DMS-Desktop-Widget und verhält sich wie die
 
 ## Installation
 
+Aus der Plugin-Registry:
+
 ```sh
-git clone https://github.com/21Rebel/dms-audiofx ~/.config/DankMaterialShell/plugins/AudioFx
+dms plugins install audioFx
+dms ipc call plugins enable audioFx
+```
+
+Das Plugin steht auch in DMS unter Einstellungen → Plugins → Durchsuchen. Oder direkt aus dem Repository:
+
+```sh
+git clone https://github.com/satoshoe-dev/dms-audiofx ~/.config/DankMaterialShell/plugins/AudioFx
 dms ipc call plugins enable audioFx
 ```
 

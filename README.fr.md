@@ -12,7 +12,7 @@ Pas à pas avec des images : [guide d'installation et de configuration](docs/GUI
 
 Le visualiseur se place le long d'un bord de l'écran et évite le cadre et la barre DMS. Il existe huit styles : onde remplie, onde en ligne, onde en miroir, barres, barres en miroir, barres suspendues, blocs et points. La couleur, l'opacité, la profondeur, le nombre de bandes, l'espacement et la fréquence d'images sont réglables.
 
-cava ne tourne que lorsqu'un lecteur MPRIS joue. Quand la lecture s'arrête, le processus est arrêté, pas seulement masqué. Une tuile du centre de contrôle active et désactive le visualiseur.
+Par défaut, cava ne tourne que lorsqu'un lecteur MPRIS joue et s'arrête avec la lecture. Si « Uniquement pendant la lecture » est désactivé, cava tourne en permanence et affiche aussi le son des programmes sans MPRIS. Une tuile du centre de contrôle active et désactive le visualiseur.
 
 ## Lueur
 
@@ -57,8 +57,17 @@ Le disque du lecteur est un widget de bureau DMS ordinaire et se comporte comme 
 
 ## Installation
 
+Depuis le registre des plugins :
+
 ```sh
-git clone https://github.com/21Rebel/dms-audiofx ~/.config/DankMaterialShell/plugins/AudioFx
+dms plugins install audioFx
+dms ipc call plugins enable audioFx
+```
+
+Il figure aussi dans DMS sous Paramètres → Plugins → Parcourir. Pour l’installer depuis le dépôt :
+
+```sh
+git clone https://github.com/satoshoe-dev/dms-audiofx ~/.config/DankMaterialShell/plugins/AudioFx
 dms ipc call plugins enable audioFx
 ```
 

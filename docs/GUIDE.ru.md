@@ -15,8 +15,16 @@ sudo dnf install cava python3-numpy python3-pillow
 
 ## 2. Установите и включите плагин
 
+Из реестра плагинов:
+
 ```sh
-git clone https://github.com/21Rebel/dms-audiofx ~/.config/DankMaterialShell/plugins/AudioFx
+dms plugins install audioFx
+```
+
+Или клонируйте репозиторий в папку плагинов DMS:
+
+```sh
+git clone https://github.com/satoshoe-dev/dms-audiofx ~/.config/DankMaterialShell/plugins/AudioFx
 ```
 
 Откройте Настройки → Дополнения и включите AudioFX.

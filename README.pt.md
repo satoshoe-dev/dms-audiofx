@@ -12,7 +12,7 @@ Passo a passo com imagens: [guia de instalação e configuração](docs/GUIDE.pt
 
 O visualizador fica ao longo de uma borda da tela e deixa de fora a moldura e a barra do DMS. São oito estilos: onda preenchida, onda como linha, onda espelhada, barras, barras espelhadas, barras suspensas, blocos e pontos. Cor, opacidade, profundidade, número de bandas, espaçamento e taxa de quadros são ajustáveis.
 
-O cava só roda enquanto um player MPRIS está tocando. Quando a reprodução para, o processo é encerrado, e não apenas ocultado. Um bloco no painel de controle liga e desliga o visualizador.
+Por padrão, o cava só roda enquanto um player MPRIS está tocando e é encerrado quando a reprodução para. Com “Somente durante a reprodução” desativado, o cava continua rodando e também mostra o som de programas sem MPRIS. Um bloco no painel de controle liga e desliga o visualizador.
 
 ## Brilho
 
@@ -57,8 +57,17 @@ O disco do player é um widget da área de trabalho comum do DMS e se comporta c
 
 ## Instalação
 
+Pelo registro de plugins:
+
 ```sh
-git clone https://github.com/21Rebel/dms-audiofx ~/.config/DankMaterialShell/plugins/AudioFx
+dms plugins install audioFx
+dms ipc call plugins enable audioFx
+```
+
+Ele também aparece no DMS em Configurações → Plugins → Navegar. Para instalar a partir do repositório:
+
+```sh
+git clone https://github.com/satoshoe-dev/dms-audiofx ~/.config/DankMaterialShell/plugins/AudioFx
 dms ipc call plugins enable audioFx
 ```
 

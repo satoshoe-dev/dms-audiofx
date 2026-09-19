@@ -12,7 +12,7 @@
 
 ビジュアライザーは画面の端のひとつに沿って表示され、DMS のフレームとバーの部分は避けます。スタイルは 8 種類で、塗りつぶしウェーブ、線のウェーブ、ミラーウェーブ、バー、ミラーバー、吊り下げバー、ブロック、ドットです。色、不透明度、奥行き、バンド数、間隔、フレームレートを調整できます。
 
-cava は MPRIS プレーヤーが再生している間だけ動きます。再生が止まると、プロセスは隠されるだけでなく停止します。コントロールセンターのタイルでビジュアライザーのオンとオフを切り替えられます。
+初期設定では、cava は MPRIS プレーヤーが再生している間だけ動き、再生が止まると終了します。「再生中のみ」をオフにすると cava は常に動作し、MPRIS に対応していないプログラムの音も表示します。コントロールセンターのタイルでビジュアライザーのオンとオフを切り替えられます。
 
 ## グロー
 
@@ -57,8 +57,17 @@ layer-rule {
 
 ## インストール
 
+プラグインレジストリから:
+
 ```sh
-git clone https://github.com/21Rebel/dms-audiofx ~/.config/DankMaterialShell/plugins/AudioFx
+dms plugins install audioFx
+dms ipc call plugins enable audioFx
+```
+
+DMS の 設定 → プラグイン → ブラウズ からも入手できます。リポジトリから直接入れる場合:
+
+```sh
+git clone https://github.com/satoshoe-dev/dms-audiofx ~/.config/DankMaterialShell/plugins/AudioFx
 dms ipc call plugins enable audioFx
 ```
 

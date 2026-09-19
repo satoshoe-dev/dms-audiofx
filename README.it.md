@@ -12,7 +12,7 @@ Passo per passo con immagini: [guida all'installazione e alla configurazione](do
 
 Il visualizzatore si trova lungo un bordo dello schermo e lascia libere la cornice e la barra di DMS. Ci sono otto stili: onda piena, onda come linea, onda speculare, barre, barre speculari, barre sospese, blocchi e punti. Colore, opacità, profondità, numero di bande, spaziatura e frequenza fotogrammi sono regolabili.
 
-cava gira solo mentre un lettore MPRIS è in riproduzione. Quando la riproduzione si ferma, il processo viene arrestato, non solo nascosto. Un riquadro nel centro di controllo accende e spegne il visualizzatore.
+Per impostazione predefinita cava gira solo mentre un lettore MPRIS è in riproduzione e si chiude quando la riproduzione si ferma. Con «Solo durante la riproduzione» disattivato, cava resta attivo e mostra anche l'audio dei programmi senza MPRIS. Un riquadro nel centro di controllo accende e spegne il visualizzatore.
 
 ## Bagliore
 
@@ -57,8 +57,17 @@ Il disco del lettore è un normale widget su desktop di DMS e si comporta come g
 
 ## Installazione
 
+Dal registro dei plugin:
+
 ```sh
-git clone https://github.com/21Rebel/dms-audiofx ~/.config/DankMaterialShell/plugins/AudioFx
+dms plugins install audioFx
+dms ipc call plugins enable audioFx
+```
+
+Si trova anche in DMS in Impostazioni → Plugin → Sfoglia. Per installarlo dal repository:
+
+```sh
+git clone https://github.com/satoshoe-dev/dms-audiofx ~/.config/DankMaterialShell/plugins/AudioFx
 dms ipc call plugins enable audioFx
 ```
 

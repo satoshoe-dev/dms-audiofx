@@ -140,8 +140,8 @@ Item {
         return Theme.primary;
     }
     readonly property bool gradientOn: colorChoice === "gradient"
-    // Computed once instead of per bar and frame: exactly what made the cava
-    // visualizer from the registry expensive.
+    // Computed once instead of per bar and frame, which is what makes a cava
+    // visualizer expensive.
     readonly property color fillColor: Qt.rgba(baseColor.r, baseColor.g, baseColor.b, fgAlpha)
     readonly property color gradTop: Qt.rgba(Theme.secondary.r, Theme.secondary.g, Theme.secondary.b, fgAlpha)
     readonly property color gradBottom: Qt.rgba(Theme.primary.r, Theme.primary.g, Theme.primary.b, fgAlpha)

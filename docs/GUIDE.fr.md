@@ -1,4 +1,4 @@
-# AudioFX : pas à pas
+# AudioFX : pas à pas
 
 [English](GUIDE.md) · [Deutsch](GUIDE.de.md) · [Español](GUIDE.es.md) · **Français** · [Italiano](GUIDE.it.md) · [Português](GUIDE.pt.md) · [Русский](GUIDE.ru.md) · [日本語](GUIDE.ja.md) · [简体中文](GUIDE.zh_CN.md)
 
@@ -15,17 +15,25 @@ sudo dnf install cava python3-numpy python3-pillow
 
 ## 2. Installer et activer le plugin
 
+Depuis le registre des plugins :
+
 ```sh
-git clone https://github.com/21Rebel/dms-audiofx ~/.config/DankMaterialShell/plugins/AudioFx
+dms plugins install audioFx
+```
+
+Ou clonez le dépôt dans votre dossier de plugins DMS :
+
+```sh
+git clone https://github.com/satoshoe-dev/dms-audiofx ~/.config/DankMaterialShell/plugins/AudioFx
 ```
 
 Ouvrez Paramètres → Plugins et activez AudioFX.
 
 ![Liste des plugins avec AudioFX](images/01-plugin-list.png)
 
-## 3. niri uniquement : le garder en place
+## 3. niri uniquement : le garder en place
 
-Sous niri, les surfaces d'arrière-plan se déplacent avec les espaces de travail, sauf si elles se trouvent dans le backdrop. Ajoutez ces règles à `~/.config/niri/config.kdl` :
+Sous niri, les surfaces d'arrière-plan se déplacent avec les espaces de travail, sauf si elles se trouvent dans le backdrop. Ajoutez ces règles à `~/.config/niri/config.kdl` :
 
 ```kdl
 layer-rule {
@@ -64,9 +72,9 @@ Faites défiler jusqu'à « Lueur dans le fond d'écran » et activez « Acti
 
 ![Réglages de la lueur](images/05-glow-settings.png)
 
-La lueur fonctionne le mieux avec des fonds d'écran qui ont de petites sources de lumière vives : lampes, néons, braises, lumières de la ville. Sur un fond d'écran sans ces zones, rien ne s'allume.
+La lueur fonctionne le mieux avec des fonds d'écran qui ont de petites sources de lumière vives : lampes, néons, braises, lumières de la ville. Sur un fond d'écran sans ces zones, rien ne s'allume.
 
-Choisissez la réaction des zones sous « Façon dont les zones pulsent » :
+Choisissez la réaction des zones sous « Façon dont les zones pulsent » :
 
 - Tout ensemble
 - Selon la hauteur
@@ -84,7 +92,7 @@ Ouvrez Paramètres → Widgets de bureau → Ajouter un widget de bureau et choi
 
 ![Disque du lecteur sur le bureau](images/07-disc.png)
 
-Survolez le disque pour afficher précédent, lecture et suivant. Sous « Disque du lecteur » dans les réglages d'AudioFX, choisissez le visualiseur autour de la pochette : une onde, des barres en cercle ou un anneau lumineux.
+Survolez le disque pour afficher précédent, lecture et suivant. Sous « Disque du lecteur » dans les réglages d'AudioFX, choisissez le visualiseur autour de la pochette : une onde, des barres en cercle ou un anneau lumineux.
 
 ## 8. Commandes (facultatif)
 

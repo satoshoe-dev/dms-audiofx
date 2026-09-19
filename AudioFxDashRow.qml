@@ -10,11 +10,9 @@
 // Deliberately small: on/off and switching between wave and bars. Everything
 // else is in Settings > Plugins > AudioFX.
 //
-// Pitfall: the buttons did not react to clicks while the toggle next to them
-// did. They were once in a Repeater with a model and once in an inline
-// component (`component FormButton: Rectangle`), both times without clicks.
-// Hence both are written out: two plain rectangles with their own MouseArea,
-// no indirection.
+// The two buttons are plain rectangles with their own MouseArea, written out
+// one by one. Inside a Repeater with a model or an inline component
+// (`component FormButton: Rectangle`) they receive no clicks at this spot.
 
 import QtQuick
 import qs.Common

@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """AudioFX: glow mask from a wallpaper.
 
-Finds the glowing spots of an image (saturated AND bright, in one shared hue)
-and writes the textures the glow shader reads:
+Finds the glowing spots of an image (saturated and bright; with the default
+--colors hue, in one shared hue) and writes the textures the glow shader reads:
 
   core.png   L, full resolution: how strongly a pixel itself may glow
   info.png   RGB, quarter resolution:
@@ -14,7 +14,7 @@ and writes the textures the glow shader reads:
              diagonal
 
 A "spot" is a connected glowing area after a slight dilation, so that the
-broken cracks of a hand stay one spot.
+thin broken cracks stay one spot.
 
 Spectrum assignment: the large spots (together half of the glowing area)
 belong to the bass, the next 30 % to the mids, the many small ones to the
@@ -197,8 +197,8 @@ def main():
 
     # Local contrast: brightness against the surroundings (blurred at 1/8,
     # ~2.5 % of the width). Glowing spots stand out, large evenly bright areas
-    # (an evening sky) don't. Without it, a quarter of a sunset image glowed as
-    # one flat area.
+    # (an evening sky) don't. Without it, a sunset sky would glow as one flat
+    # area.
     small = Image.fromarray((val * 255).astype(np.uint8)).resize((max(8, W // 8), max(8, H // 8)), Image.BOX)
     small = small.filter(ImageFilter.GaussianBlur(max(2.0, W / 8 * 0.025)))
     surround = np.asarray(small.resize((W, H), Image.BILINEAR)).astype(np.float32) / 255.0
@@ -323,8 +323,8 @@ def main():
         top = np.percentile(bloom[bloom > 0.01], 99.5) if (bloom > 0.01).any() else bloom.max()
         bloom = np.clip(bloom / max(top, 1e-4), 0, 1)
         # A power below 1 lifts the bloom of small spots (lamps, an eye) so one
-        # large lava area does not dominate. A square root spread the halo over
-        # a third of some images, 0.6 keeps it near the spots.
+        # large lava area does not dominate. 0.6 keeps the halo near the spots;
+        # a square root spreads it over large parts of some images.
         bloom = np.power(bloom, 0.6) * np.clip(bloom / 0.02, 0, 1)
 
     # Spread spot values into the bloom: every pixel in reach takes spectrum,

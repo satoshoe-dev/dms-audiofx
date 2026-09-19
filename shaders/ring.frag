@@ -64,7 +64,7 @@ void main() {
     float light = (core * 1.2 + halo * 0.45) * drive * ubuf.strength;
     light = light / (1.0 + 0.4 * light);
     // fade softly to 0 from the ring all the way to the edge of the surface;
-    // fading only over the last 10 % left a faint circular edge visible
+    // fading only over the last 10 % leaves a faint circular edge
     float fade = 1.0 - smoothstep(ubuf.radius, 1.0, r);
     light *= fade * fade;
 

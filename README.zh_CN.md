@@ -12,7 +12,7 @@
 
 可视化沿屏幕的一条边显示，并避开 DMS 框架和状态栏。共有八种样式：填充波形、线条波形、镜像波形、柱状、镜像柱状、倒挂柱状、方块和圆点。颜色、不透明度、深度、频段、间距和帧率都可以调整。
 
-只有 MPRIS 播放器正在播放时，cava 才会运行。播放停止后，进程会被停止，而不只是隐藏。控制中心里的一个磁贴可以开关可视化。
+默认情况下，只有 MPRIS 播放器正在播放时 cava 才会运行，播放停止后 cava 进程随即结束。关闭“仅在播放时”后，cava 会一直运行，也会显示不支持 MPRIS 的程序发出的声音。控制中心里的一个磁贴可以开关可视化。
 
 ## 辉光
 
@@ -57,8 +57,17 @@ layer-rule {
 
 ## 安装
 
+从插件注册表安装：
+
 ```sh
-git clone https://github.com/21Rebel/dms-audiofx ~/.config/DankMaterialShell/plugins/AudioFx
+dms plugins install audioFx
+dms ipc call plugins enable audioFx
+```
+
+也可以在 DMS 的 设置 → 插件 → 浏览 中找到它。若要从仓库安装：
+
+```sh
+git clone https://github.com/satoshoe-dev/dms-audiofx ~/.config/DankMaterialShell/plugins/AudioFx
 dms ipc call plugins enable audioFx
 ```
 

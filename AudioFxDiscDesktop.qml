@@ -45,9 +45,8 @@ Item {
     readonly property var _t: SettingsData.pluginSettings
 
     // The widget card in Settings > Desktop Widgets writes into this instance's
-    // config, the plugin page into the plugin settings. The instance wins; until
-    // 18.09.2026 the disc read only the plugin settings, so the card's choice of
-    // visualizer had no effect.
+    // config, the plugin page into the plugin settings. The instance config is
+    // read first, otherwise the card's choice of visualizer would have no effect.
     function cfg(key, fallback) {
         const c = root.instanceData?.config;
         if (c && c[key] !== undefined && c[key] !== null)
