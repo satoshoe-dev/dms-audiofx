@@ -230,9 +230,6 @@
     "All saturated colors": {
         "All saturated colors": "Все насыщенные цвета"
     },
-    "Off: only the most common hue glows (right for an image with a single glow color). On: every saturated, bright color.": {
-        "Off: only the most common hue glows (right for an image with a single glow color). On: every saturated, bright color.": "Выкл.: светится только самый частый оттенок (подходит для изображения с одним цветом свечения). Вкл.: любой насыщенный яркий цвет."
-    },
     "Glow frame rate": {
         "Glow frame rate": "Частота кадров свечения"
     },

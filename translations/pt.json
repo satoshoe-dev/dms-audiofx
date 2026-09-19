@@ -230,9 +230,6 @@
     "All saturated colors": {
         "All saturated colors": "Todas as cores saturadas"
     },
-    "Off: only the most common hue glows (right for an image with a single glow color). On: every saturated, bright color.": {
-        "Off: only the most common hue glows (right for an image with a single glow color). On: every saturated, bright color.": "Desligado: só o tom mais frequente brilha (o certo para uma imagem com uma única cor luminosa). Ligado: qualquer cor saturada e clara."
-    },
     "Glow frame rate": {
         "Glow frame rate": "Taxa de quadros do brilho"
     },

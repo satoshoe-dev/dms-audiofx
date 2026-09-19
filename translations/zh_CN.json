@@ -230,9 +230,6 @@
     "All saturated colors": {
         "All saturated colors": "所有饱和色"
     },
-    "Off: only the most common hue glows (right for an image with a single glow color). On: every saturated, bright color.": {
-        "Off: only the most common hue glows (right for an image with a single glow color). On: every saturated, bright color.": "关闭：只有最常见的色相发光（适合只有一种发光颜色的图像）。开启：所有饱和且明亮的颜色都会发光。"
-    },
     "Glow frame rate": {
         "Glow frame rate": "辉光帧率"
     },

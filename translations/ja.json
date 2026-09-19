@@ -230,9 +230,6 @@
     "All saturated colors": {
         "All saturated colors": "すべての鮮やかな色"
     },
-    "Off: only the most common hue glows (right for an image with a single glow color). On: every saturated, bright color.": {
-        "Off: only the most common hue glows (right for an image with a single glow color). On: every saturated, bright color.": "オフ：最も多い色相だけが光ります（光の色が 1 色だけの画像に最適）。オン：鮮やかで明るい色すべてが光ります。"
-    },
     "Glow frame rate": {
         "Glow frame rate": "グローのフレームレート"
     },

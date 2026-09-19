@@ -230,9 +230,6 @@
     "All saturated colors": {
         "All saturated colors": "Tutti i colori saturi"
     },
-    "Off: only the most common hue glows (right for an image with a single glow color). On: every saturated, bright color.": {
-        "Off: only the most common hue glows (right for an image with a single glow color). On: every saturated, bright color.": "Disattivato: brilla solo la tonalità più frequente (giusto per un'immagine con un solo colore luminoso). Attivato: ogni colore saturo e luminoso."
-    },
     "Glow frame rate": {
         "Glow frame rate": "Frequenza fotogrammi del bagliore"
     },
