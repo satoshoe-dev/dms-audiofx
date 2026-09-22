@@ -29,6 +29,10 @@ import qs.Common
 Item {
     id: daemon
 
+    // set by the plugin loader
+    property var pluginService: null
+    property string pluginId: "audioFx"
+
     readonly property var _t: SettingsData.pluginSettings
 
     function cfg(key, fallback) {
