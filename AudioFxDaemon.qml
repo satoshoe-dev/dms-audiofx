@@ -25,6 +25,7 @@ import Quickshell
 import Quickshell.Io
 import Quickshell.Wayland
 import qs.Common
+import qs.Services
 
 Item {
     id: daemon
@@ -106,7 +107,29 @@ Item {
     // niri stacks surfaces of the same layer in creation order. Created only
     // when switched on at runtime, the glow would end up above the desktop
     // widgets instead of below them.
+    // One cava process for the glow on every screen. It runs while the glow
+    // is ready on at least one screen (wallpaper analyzed, textures loaded)
+    // and something plays.
+    readonly property bool glowReady: glowScreens.instances.some(w => w.glowReady)
+    readonly property bool playing: MprisController.activePlayer?.isPlaying ?? false
+
+    AudioFxLevels {
+        id: glowLevels
+        active: daemon.glowReady && daemon.playing
+        fps: {
+            daemon._t;
+            return Math.max(10, Math.min(60, daemon.cfg("glowFps", 30)));
+        }
+        sensitivity: {
+            daemon._t;
+            return Math.max(10, Math.min(300, daemon.cfg("sensitivity", 100)));
+        }
+        key: "glow"
+    }
+
     Variants {
+        id: glowScreens
+
         model: Quickshell.screens
 
         delegate: PanelWindow {
@@ -133,9 +156,13 @@ Item {
                 item: Item {}
             }
 
+            readonly property bool glowReady: glow.ready
+
             AudioFxGlow {
+                id: glow
                 anchors.fill: parent
                 screenName: glowWindow.modelData?.name ?? ""
+                levels: glowLevels
             }
         }
     }
@@ -177,6 +204,11 @@ Item {
         }
     }
 
+    // One cava process for the visualizer on every screen
+    AudioFxBands {
+        id: bandSource
+    }
+
     Variants {
         model: Quickshell.screens
 
@@ -216,7 +248,7 @@ Item {
 
             AudioFxCanvas {
                 anchors.fill: parent
-                windowKey: visualizerWindow.modelData?.name ?? "global"
+                source: bandSource
             }
         }
     }

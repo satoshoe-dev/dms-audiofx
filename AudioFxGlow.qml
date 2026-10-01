@@ -7,7 +7,8 @@
 //   2. shaders/glow.frag draws only light on top (additive, alpha 0) into a
 //      full-screen surface on `background` in the niri backdrop, directly
 //      above the DMS wallpaper.
-//   3. AudioFxLevels provides bands, level and beats.
+//   3. AudioFxLevels provides bands, level and beats (one for all screens,
+//      created by the daemon).
 //
 // Cost: the shader only renders when a value changes, i.e. at the cava frame
 // rate, at 15 frames per second for "breathe", and not at all for "glow" and
@@ -71,14 +72,6 @@ Item {
     readonly property real speed: {
         root._t;
         return Math.max(10, Math.min(300, cfg("glowSpeed", 100))) / 100 * 0.45;
-    }
-    readonly property int fps: {
-        root._t;
-        return Math.max(10, Math.min(60, cfg("glowFps", 30)));
-    }
-    readonly property int sensitivity: {
-        root._t;
-        return Math.max(10, Math.min(300, cfg("sensitivity", 100)));
     }
 
     // ------------------------------------------------------------ wallpaper
@@ -157,18 +150,26 @@ Item {
     }
 
     // ------------------------------------------------------------ audio
-    readonly property bool playing: MprisController.activePlayer?.isPlaying ?? false
     readonly property bool ready: switchedOn && mask !== null && coreImage.status === Image.Ready && infoImage.status === Image.Ready && distImage.status === Image.Ready && colorImage.status === Image.Ready
 
-    AudioFxLevels {
-        id: audio
-        active: root.ready && root.playing
-        fps: root.fps
-        sensitivity: root.sensitivity
-        key: "glow-" + root.screenName
+    // Bands, level and beats come from one AudioFxLevels in the daemon, shared
+    // by the glow on every screen. The daemon runs it while the glow is ready
+    // on at least one screen and something plays.
+    property var levels: null
+    readonly property QtObject audio: QtObject {
+        readonly property bool running: root.levels ? root.levels.running : false
+        readonly property var bands: root.levels ? root.levels.bands : []
+        readonly property real level: root.levels ? root.levels.level : 0
+    }
 
-        onFrame: effect.time = root.now()
-        onBeat: strength => {
+    Connections {
+        target: root.levels
+
+        function onFrame() {
+            effect.time = root.now();
+        }
+
+        function onBeat(strength) {
             const times = [effect.beatTime.x, effect.beatTime.y, effect.beatTime.z, effect.beatTime.w];
             const strengths = [effect.beatStrength.x, effect.beatStrength.y, effect.beatStrength.z, effect.beatStrength.w];
             // replace the oldest slot
