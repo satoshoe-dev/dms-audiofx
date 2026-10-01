@@ -297,7 +297,7 @@ Item {
         readonly property real radius: root.coverSize / 2 - root.ringWidth / 2 - 3
 
         ShapePath {
-            strokeColor: Qt.rgba(0, 0, 0, 0.4)
+            strokeColor: Theme.withAlpha(Theme.surfaceContainer, 0.4)
             strokeWidth: root.ringWidth
             fillColor: "transparent"
             capStyle: ShapePath.FlatCap
@@ -346,7 +346,7 @@ Item {
             height: root.coverSize
             radius: width / 2
             anchors.centerIn: parent
-            color: Qt.rgba(0, 0, 0, 0.45)
+            color: Theme.withAlpha(Theme.surfaceContainer, 0.55)
         }
 
         component DiscButton: Rectangle {
@@ -364,7 +364,7 @@ Item {
             radius: size / 2
             x: root.width / 2 + offset - size / 2
             y: root.height / 2 - size / 2
-            color: emphasized ? (hovered ? Qt.lighter(Theme.primary, 1.15) : Theme.primary) : (hovered ? Qt.rgba(1, 1, 1, 0.18) : "transparent")
+            color: emphasized ? (hovered ? Qt.lighter(Theme.primary, 1.15) : Theme.primary) : (hovered ? Theme.withAlpha(Theme.surfaceText, 0.18) : "transparent")
             scale: hovered ? 1.08 : 1
 
             Behavior on scale {
@@ -377,7 +377,7 @@ Item {
                 anchors.centerIn: parent
                 name: button.icon
                 size: button.size * 0.55
-                color: button.emphasized ? Theme.primaryText : "white"
+                color: button.emphasized ? Theme.primaryText : Theme.surfaceText
                 weight: 500
             }
         }
