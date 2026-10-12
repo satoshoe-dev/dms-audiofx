@@ -27,6 +27,13 @@ Item {
     property real amplitude: 2.0
     property int barCount: 72
     property string windowKey: "global"
+    // the accent, or the colour of one's own (plugin setting colorChoice "custom")
+    readonly property color barColor: {
+        SettingsData.pluginSettings;
+        const own = String(SettingsData.getPluginSetting("audioFx", "customColor", "") || "");
+        return SettingsData.getPluginSetting("audioFx", "colorChoice", "primary") === "custom"
+            && /^#[0-9a-fA-F]{6,8}$/.test(own) ? own : Theme.primary;
+    }
 
     readonly property int halfCount: Math.max(6, Math.round(barCount / 2))
     readonly property real innerRadius: coverSize / 2 + 5
@@ -140,7 +147,7 @@ exec cava -p ${root.confPath} < /dev/null`]
             const thickness = Math.max(1.5, Math.min(8, circumference / total * 0.55));
             ctx.lineCap = "round";
             ctx.lineWidth = thickness;
-            ctx.strokeStyle = Theme.primary;
+            ctx.strokeStyle = root.barColor;
             for (let i = 0; i < total; i++) {
                 // 0 = top, clockwise; second half mirrored
                 const band = i < n ? i : total - 1 - i;

@@ -65,6 +65,13 @@ Item {
         root._t;
         return cfg("colorChoice", "primary");
     }
+    // a colour of one's own (colorChoice "custom"), for a dark accent on a dark
+    // background or a light one on a light background
+    readonly property string ownColor: {
+        root._t;
+        const c = String(cfg("customColor", "") || "");
+        return /^#[0-9a-fA-F]{6,8}$/.test(c) ? c : "";
+    }
     readonly property int idleSeconds: {
         root._t;
         return cfg("idleSeconds", 5);
@@ -110,6 +117,8 @@ Item {
             return Theme.secondary;
         if (colorChoice === "text")
             return Theme.surfaceVariantText;
+        if (colorChoice === "custom" && root.ownColor !== "")
+            return root.ownColor;
         return Theme.primary;
     }
     readonly property bool gradientOn: colorChoice === "gradient"

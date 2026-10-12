@@ -204,8 +204,20 @@ PluginSettings {
             {
                 label: I18n.trFor("audioFx", "Text color"),
                 value: "text"
+            },
+            {
+                label: I18n.trFor("audioFx", "Own color"),
+                value: "custom"
             }
         ]
+    }
+
+    ColorSetting {
+        visible: !root.asWidget
+        settingKey: "customColor"
+        label: I18n.trFor("audioFx", "Own color")
+        description: I18n.trFor("audioFx", "Used when Color is set to Own color, for the edge and the player disc. For a dark accent on a dark background, or a light one on a light background.")
+        defaultValue: "#ffffff"
     }
 
     SliderSetting {

@@ -54,6 +54,14 @@ Item {
             return c[key];
         return SettingsData.getPluginSetting("audioFx", key, fallback);
     }
+    // the disc's colour: the accent, or the colour of one's own (colour
+    // "Own colour" in the plugin settings)
+    readonly property color accent: {
+        root._t;
+        const own = String(SettingsData.getPluginSetting("audioFx", "customColor", "") || "");
+        return SettingsData.getPluginSetting("audioFx", "colorChoice", "primary") === "custom"
+            && /^#[0-9a-fA-F]{6,8}$/.test(own) ? own : Theme.primary;
+    }
 
     readonly property string form: {
         root._t;
@@ -244,6 +252,7 @@ Item {
             height: root.artSpan
             anchors.centerIn: parent
             visible: root.form === "blob"
+            accentColor: root.accent
             playing: root.playing && root.form === "blob"
             opacity: root.vizOpacity
             amplitudeScale: root.amplitude
@@ -261,7 +270,7 @@ Item {
             layer.enabled: root.tint > 0
             layer.effect: MultiEffect {
                 colorization: root.tint
-                colorizationColor: Theme.primary
+                colorizationColor: root.accent
             }
         }
     }
@@ -282,6 +291,7 @@ Item {
         anchors.fill: parent
         z: -1
         active: root.visible && root.form === "glow"
+        color: root.accent
         opacity: root.vizOpacity
         playing: root.playing
         coverSize: root.coverSize
@@ -313,7 +323,7 @@ Item {
         }
 
         ShapePath {
-            strokeColor: root.progress > 0 ? Theme.primary : "transparent"
+            strokeColor: root.progress > 0 ? root.accent : "transparent"
             strokeWidth: root.ringWidth
             fillColor: "transparent"
             capStyle: ShapePath.RoundCap
