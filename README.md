@@ -36,6 +36,10 @@ If Pear Desktop (YouTube Music) runs with its API server enabled, the disc loads
 
 The cover can be tinted in the DMS accent color ("Tint in the accent color"), so it changes with the theme or profile like the rest of the shell.
 
+## Dashboard card
+
+From DMS 2.0 on, AudioFX adds a card to the dashboard overview: on/off and switching between wave and bars. Add it in edit mode with Add widget. Older versions skip the card.
+
 ## Requirements
 
 - DankMaterialShell 1.6.1 or newer

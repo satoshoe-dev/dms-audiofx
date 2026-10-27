@@ -258,14 +258,13 @@ Item {
             amplitudeScale: root.amplitude
         }
 
-        DankAlbumArt {
+        AudioFxAlbumArt {
             width: root.artSpan
             height: root.artSpan
             anchors.centerIn: parent
             activePlayer: root.player
             artUrl: root.hiResArt
             albumSize: root.coverSize
-            showAnimation: false
 
             layer.enabled: root.tint > 0
             layer.effect: MultiEffect {

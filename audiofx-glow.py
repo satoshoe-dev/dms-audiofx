@@ -160,10 +160,21 @@ def blur(a, sigma):
     return cols[r:-r, r:-r]
 
 
+def default_cache():
+    # The plugin passes --cache from DMS' own cache folder. Without it: DMS 1.6
+    # uses ~/.cache/DankMaterialShell, DMS 2.0 ~/.cache/dms and leaves the old
+    # name as a symlink. ~/.cache/dms alone says nothing, the 1.6 CLI creates it too.
+    base = os.environ.get("XDG_CACHE_HOME") or os.path.expanduser("~/.cache")
+    old = os.path.join(base, "DankMaterialShell")
+    if os.path.isdir(old) and not os.path.islink(old):
+        return os.path.join(old, "audiofx-glow")
+    return os.path.join(base, "dms", "audiofx-glow")
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("image")
-    ap.add_argument("--cache", default=os.path.expanduser("~/.cache/DankMaterialShell/audiofx-glow"))
+    ap.add_argument("--cache", default=default_cache())
     ap.add_argument("--threshold", type=int, default=50, help="0 finds a lot, 100 only the strongest")
     # hue: the most common saturated hue, all: every saturated color,
     # light: like hue, but bright light sources without color when the image

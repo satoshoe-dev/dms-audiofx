@@ -114,7 +114,7 @@ Item {
             maskProcess.running = false;
             maskProcess.output = "";
             maskProcess.requestedKey = root.maskKey;
-            maskProcess.command = ["python3", root.script, root.imagePath, "--threshold", String(root.threshold), "--colors", root.colorsMode];
+            maskProcess.command = ["python3", root.script, root.imagePath, "--cache", Paths.strip(Paths.cache) + "/audiofx-glow", "--threshold", String(root.threshold), "--colors", root.colorsMode];
             maskProcess.running = true;
         }
     }

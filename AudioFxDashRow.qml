@@ -7,6 +7,9 @@
 // here on purpose rather than in the patch: if the anchor breaks after a DMS
 // update, only one line is lost, not the controls.
 //
+// From DMS 2.0 on there is a plugin interface for this: the same row is the
+// content of the overview card in `AudioFxDashCard.qml`.
+//
 // Deliberately small: on/off and switching between wave and bars. Everything
 // else is in Settings > Plugins > AudioFX.
 //

@@ -8,12 +8,25 @@
     "capabilities": [
         "daemon",
         "control-center",
-        "desktop-widget"
+        "desktop-widget",
+        "dash-card"
     ],
     "components": {
         "daemon": "./AudioFxDaemon.qml",
         "widget": "./AudioFxWidget.qml",
-        "desktop": "./AudioFxDiscDesktop.qml"
+        "desktop": "./AudioFxDiscDesktop.qml",
+        "dashCard": "./AudioFxDashCard.qml"
+    },
+    "dash": {
+        "card": {
+            "title": "AudioFX",
+            "w": 3,
+            "h": 1,
+            "minW": 3,
+            "minH": 1,
+            "maxW": 4,
+            "maxH": 1
+        }
     },
     "settings": "./AudioFxSettings.qml",
     "icon": "graphic_eq",
