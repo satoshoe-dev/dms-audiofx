@@ -42,7 +42,7 @@ From DMS 2.0 on, AudioFX adds a card to the dashboard overview: on/off and switc
 
 ## Requirements
 
-- DankMaterialShell 1.6.1 or newer
+- DankMaterialShell 1.6.1 or newer (tested with 1.6.2 and 2.0.0)
 - cava
 - For the glow: python3 with numpy and Pillow
 
